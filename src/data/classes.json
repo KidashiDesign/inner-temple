@@ -1,0 +1,14 @@
+{
+  "levels": ["Einsteiger", "Fortgeschritten", "Therapeutisch"],
+  "items": [
+    { "title": "Hatha Yoga", "time": "07:00 Uhr", "level": "Einsteiger", "tags": ["Einsteiger", "60 Min."], "description": "Platzhaltertext: ruhige Praxis mit Fokus auf Haltung und Atem.", "image": null },
+    { "title": "Sanfter Morgen", "time": "08:30 Uhr", "level": "Einsteiger", "tags": ["Einsteiger", "45 Min."], "description": "Platzhaltertext: sanfter Einstieg in den Tag für alle Körper.", "image": null },
+    { "title": "Yoga Basics", "time": "18:00 Uhr", "level": "Einsteiger", "tags": ["Einsteiger", "75 Min."], "description": "Platzhaltertext: Grundlagen Schritt für Schritt erklärt.", "image": null },
+    { "title": "Vinyasa Flow", "time": "09:00 Uhr", "level": "Fortgeschritten", "tags": ["Fortgeschritten", "75 Min."], "description": "Platzhaltertext: fließende Sequenzen im Rhythmus des Atems.", "image": null },
+    { "title": "Ashtanga", "time": "06:30 Uhr", "level": "Fortgeschritten", "tags": ["Fortgeschritten", "90 Min."], "description": "Platzhaltertext: kraftvolle, feste Serie für Geübte.", "image": null },
+    { "title": "Power Flow", "time": "19:30 Uhr", "level": "Fortgeschritten", "tags": ["Fortgeschritten", "60 Min."], "description": "Platzhaltertext: dynamische Stunde für Kraft und Ausdauer.", "image": null },
+    { "title": "Yin Yoga", "time": "20:00 Uhr", "level": "Therapeutisch", "tags": ["Therapeutisch", "75 Min."], "description": "Platzhaltertext: lange gehaltene Positionen für tiefe Entspannung.", "image": null },
+    { "title": "Rücken & Atem", "time": "12:00 Uhr", "level": "Therapeutisch", "tags": ["Therapeutisch", "60 Min."], "description": "Platzhaltertext: gezielte Übungen für Rücken und Schultern.", "image": null },
+    { "title": "Restorative", "time": "17:00 Uhr", "level": "Therapeutisch", "tags": ["Therapeutisch", "60 Min."], "description": "Platzhaltertext: unterstützte Haltungen zur Regeneration.", "image": null }
+  ]
+}

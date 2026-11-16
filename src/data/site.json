@@ -1,0 +1,24 @@
+{
+  "name": "Shivas Yoga Retreat",
+  "tagline": "Yoga, Atem und Stille – an einem Ort.",
+  "nav": [
+    { "label": "Start", "to": "/" },
+    { "label": "Über uns", "to": "/ueber-uns" },
+    { "label": "Kurse", "to": "/kurse" },
+    { "label": "Team", "to": "/team" },
+    { "label": "Kontakt", "to": "/kontakt" }
+  ],
+  "cta": { "label": "Probestunde buchen", "to": "/kontakt" },
+  "contact": {
+    "address": ["Musterstraße 1", "12345 Musterstadt"],
+    "phone": "+49 000 0000000",
+    "email": "hallo@example.com",
+    "hours": ["Mo–Fr: 07:00–20:00 Uhr", "Sa–So: 08:00–14:00 Uhr"]
+  },
+  "social": [
+    { "label": "Instagram", "href": "#" },
+    { "label": "Facebook", "href": "#" },
+    { "label": "YouTube", "href": "#" }
+  ],
+  "partners": ["Partner Eins", "Partner Zwei", "Partner Drei", "Partner Vier", "Partner Fünf", "Partner Sechs"]
+}

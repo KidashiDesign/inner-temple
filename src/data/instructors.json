@@ -1,0 +1,10 @@
+[
+  { "slug": "lehrperson-1", "name": "Vorname Nachname", "role": "Hatha & Meditation", "image": null, "featured": true },
+  { "slug": "lehrperson-2", "name": "Vorname Nachname", "role": "Vinyasa Flow", "image": null, "featured": true },
+  { "slug": "lehrperson-3", "name": "Vorname Nachname", "role": "Yin Yoga", "image": null, "featured": true },
+  { "slug": "lehrperson-4", "name": "Vorname Nachname", "role": "Atemarbeit", "image": null, "featured": true },
+  { "slug": "lehrperson-5", "name": "Vorname Nachname", "role": "Yoga-Therapie", "image": null, "featured": false },
+  { "slug": "lehrperson-6", "name": "Vorname Nachname", "role": "Ashtanga", "image": null, "featured": false },
+  { "slug": "lehrperson-7", "name": "Vorname Nachname", "role": "Klangreise", "image": null, "featured": false },
+  { "slug": "lehrperson-8", "name": "Vorname Nachname", "role": "Yoga für Einsteiger", "image": null, "featured": false }
+]

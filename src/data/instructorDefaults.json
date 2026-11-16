@@ -1,0 +1,21 @@
+{
+  "quote": "Platzhalter-Zitat: Ein persönlicher Satz der Lehrperson über ihre Art zu unterrichten und das, was Teilnehmende aus der Stunde mitnehmen.",
+  "bioTitle": "Über mich",
+  "shortBio": "Platzhaltertext für die Kurzbiografie. Hier stehen Werdegang, Ausbildung und der persönliche Zugang zum Yoga in drei bis vier Sätzen.",
+  "specialty": "Schwerpunkt eintragen",
+  "certifications": "Ausbildungen eintragen",
+  "workingDays": "Unterrichtstage eintragen",
+  "designation": "Position eintragen",
+  "bioSummary": "Ein Satz, der die Lehrperson zusammenfasst.",
+  "experience": "Jahre Erfahrung eintragen",
+  "teachingStyle": "Unterrichtsstil eintragen",
+  "email": "team@example.com",
+  "phone": "+49 000 0000000",
+  "philosophy": [
+    { "title": "Achtsamkeit", "text": "Platzhaltertext zu diesem Grundsatz des Unterrichts." },
+    { "title": "Atem", "text": "Platzhaltertext zu diesem Grundsatz des Unterrichts." },
+    { "title": "Ausrichtung", "text": "Platzhaltertext zu diesem Grundsatz des Unterrichts." }
+  ],
+  "benefits": ["Vorteil eins", "Vorteil zwei", "Vorteil drei", "Vorteil vier"],
+  "closingText": "Platzhaltertext: Einladung, eine Stunde bei dieser Lehrperson zu besuchen."
+}

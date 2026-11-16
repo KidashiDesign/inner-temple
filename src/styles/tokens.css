@@ -1,0 +1,52 @@
+/* Design tokens. Brand colours and fonts are placeholders: change them here. */
+:root {
+  --c-bg: #f6f1e7;
+  --c-bg-alt: #ebe3d2;
+  --c-white: #ffffff;
+  --c-line: #d9d2c3;
+  --c-text: #5a616b;
+  --c-ink: #232a36;
+  --c-dark: #121827;
+  --c-accent: #c46a1c;
+  --c-dash: rgba(0, 0, 0, 0.2);
+
+  --f-head: 'Fraunces Variable', Georgia, serif;
+  --f-body: 'DM Sans Variable', system-ui, sans-serif;
+
+  --fs-h1: 3.75rem;
+  --fs-h2: 2.875rem;
+  --fs-h3: 2.5rem;
+  --fs-h4: 2rem;
+  --fs-h5: 1.5rem;
+  --fs-h6: 1.25rem;
+  --fs-body: 1rem;
+  --fs-sub: 1.125rem;
+  --fs-big: clamp(2.3125rem, 5.208vw, 6.25rem);
+  --fs-large: clamp(2.3125rem, 10.4167vw, 12.5rem);
+
+  --container: 101.5rem;
+  --gutter: 2rem;
+  --section: 10.25rem;
+  --gap-head: 1.5rem;
+  --gap-main: 4rem;
+  --gap-cols: 2.5rem;
+  --gap-cards: 1.5rem;
+  --r-s: 0.5rem;
+  --r-m: 1rem;
+}
+
+@media (min-width: 1280px) {
+  :root { --fs-h1: 4.5rem; --fs-h2: 3.5rem; --fs-body: 1.125rem; }
+}
+@media (max-width: 991px) {
+  :root {
+    --fs-h1: 2.625rem; --fs-h2: 2rem; --fs-h3: 1.75rem; --fs-h4: 1.5625rem; --fs-h5: 1.375rem; --fs-h6: 1.125rem; --fs-sub: 1rem;
+    --section: 4.375rem; --gap-head: 1.25rem; --gap-main: 2.25rem;
+  }
+}
+@media (max-width: 767px) {
+  :root { --gutter: 1.25rem; }
+}
+@media (max-width: 479px) {
+  :root { --fs-h1: 2.375rem; --fs-h2: 1.875rem; --fs-h3: 1.25rem; --fs-h4: 1.375rem; --fs-h5: 1.25rem; --fs-h6: 1.0625rem; }
+}

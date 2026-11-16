@@ -1,0 +1,24 @@
+{
+  "programs": [
+    { "title": "Yoga-Kurse", "text": "Platzhaltertext: wöchentliche Kurse für jedes Niveau." },
+    { "title": "Meditation", "text": "Platzhaltertext: geführte Praxis für Ruhe und Klarheit." },
+    { "title": "Atemarbeit", "text": "Platzhaltertext: Pranayama für Energie und Ausgleich." },
+    { "title": "Retreats", "text": "Platzhaltertext: mehrtägige Auszeiten in der Gruppe." }
+  ],
+  "offerings": [
+    { "title": "Einzelstunden", "text": "Platzhaltertext: individuelle Begleitung, abgestimmt auf Ihre Ziele." },
+    { "title": "Gruppenkurse", "text": "Platzhaltertext: gemeinsam üben in kleinen Gruppen." },
+    { "title": "Wochenend-Retreats", "text": "Platzhaltertext: zwei Tage Abstand vom Alltag." }
+  ],
+  "features": [
+    { "title": "Erfahrene Lehrende", "text": "Platzhaltertext zu diesem Vorteil in ein bis zwei Zeilen." },
+    { "title": "Kleine Gruppen", "text": "Platzhaltertext zu diesem Vorteil in ein bis zwei Zeilen." },
+    { "title": "Ruhige Räume", "text": "Platzhaltertext zu diesem Vorteil in ein bis zwei Zeilen." }
+  ],
+  "practice": ["Körper kräftigen und dehnen", "Den Atem bewusst führen", "Den Geist zur Ruhe bringen", "Gewohnheiten achtsam verändern", "Gemeinschaft erleben"],
+  "schedule": [
+    { "time": "07:00", "details": ["Mit Lehrperson 1", "Montag bis Freitag"], "title": "Morgenpraxis", "text": "Platzhaltertext: ruhiger Start in den Tag mit Atem und sanfter Bewegung." },
+    { "time": "12:30", "details": ["Mit Lehrperson 2", "Dienstag und Donnerstag"], "title": "Mittagspause auf der Matte", "text": "Platzhaltertext: kompakte Einheit für neue Energie am Mittag." },
+    { "time": "19:00", "details": ["Mit Lehrperson 3", "Montag bis Samstag"], "title": "Abendlicher Ausklang", "text": "Platzhaltertext: lange Dehnungen und Entspannung zum Tagesende." }
+  ]
+}
