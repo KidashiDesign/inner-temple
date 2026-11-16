@@ -5,6 +5,7 @@ import Page from '../components/Page.jsx'
 import PageHero from '../components/PageHero.jsx'
 import Button from '../components/Button.jsx'
 import Media from '../components/Media.jsx'
+import { IMG } from '../data/images.js'
 import Badge from '../components/Badge.jsx'
 import SectionHeader from '../components/SectionHeader.jsx'
 import LogoMarquee from '../components/LogoMarquee.jsx'
@@ -16,6 +17,7 @@ import instructors from '../data/instructors.json'
 
 const steps = ['Ankommen', 'Üben', 'Vertiefen', 'Mitnehmen']
 const sessions = ['Einzelstunde', 'Gruppenkurs', 'Retreat']
+const SESSION_IMGS = [IMG.atem, IMG.kurs, IMG.berge]
 const expertise = ['Fundierte Ausbildung', 'Individuelle Anpassung', 'Ruhige Umgebung', 'Langfristige Begleitung']
 const timetable = [
   { group: 'Morgens', rows: [['07:00 – 08:00', 'Hatha Yoga'], ['08:30 – 09:15', 'Sanfter Morgen'], ['09:30 – 10:45', 'Vinyasa Flow']] },
@@ -69,12 +71,12 @@ export default function About() {
   return (
     <div ref={ref}>
       <Page>
-        <PageHero eyebrow="Über uns" title="Ein Ort mit" accent="Haltung" text={`Platzhaltertext: ein bis zwei Sätze zur Geschichte und zum Selbstverständnis von ${site.name}.`} />
+        <PageHero image={IMG.hero} eyebrow="Über uns" title="Ein Ort mit" accent="Haltung" text={`Platzhaltertext: ein bis zwei Sätze zur Geschichte und zum Selbstverständnis von ${site.name}.`} />
 
         <section className="section bg-alt">
           <div className="container split">
             <div className="split__media" data-image>
-              <Media tone={2} data-zoom label="Bild" />
+              <Media {...IMG.morgenlicht} data-zoom />
               <div className="split__badge"><Badge>Unser Weg</Badge></div>
             </div>
             <div className="split__body">
@@ -105,7 +107,7 @@ export default function About() {
             <div className="grid-3" data-card-group>
               {sessions.map((s, i) => (
                 <article className="scard" data-card key={s}>
-                  <div className="scard__media" data-image><Media tone={i + 3} data-zoom label="Bild" /></div>
+                  <div className="scard__media" data-image><Media {...SESSION_IMGS[i % 3]} data-zoom /></div>
                   <div className="scard__body"><div className="t-h5">{s}</div><p>Platzhaltertext: kurze Beschreibung dieses Formats.</p></div>
                 </article>
               ))}
@@ -129,7 +131,7 @@ export default function About() {
 
         <section className="band">
           <div className="band__box">
-            <div className="band__bg"><Media tone={5} /><div className="band__shade" /></div>
+            <div className="band__bg"><Media {...IMG.schrein} /><div className="band__shade" /></div>
             <div className="container band__content">
               <span className="band__icon"><Lotus /></span>
               <h2 data-blur>Platzhalter: ein Leitsatz über das <span className="accent">Retreat</span></h2>
@@ -159,7 +161,7 @@ export default function About() {
               <div data-blur><Button to="/kontakt">Platz anfragen</Button></div>
             </div>
             <div className="split__media" data-image>
-              <Media tone={1} data-zoom label="Bild" />
+              <Media {...IMG.namaste} data-zoom />
               <div className="statcard"><div className="counter__value" data-counter="30+">30+</div><div className="t-h6">Platzhalter: Kurse pro Woche</div></div>
             </div>
           </div>
