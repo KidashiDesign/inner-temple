@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import Button from './Button.jsx'
 import Media from './Media.jsx'
+import { IMG } from '../data/images.js'
 import { Pin } from './Icons.jsx'
 import site from '../data/site.json'
 
@@ -8,7 +9,7 @@ export default function Footer() {
   const half = Math.ceil(site.nav.length / 2)
   return (
     <footer className="footer">
-      <div className="footer__bg"><Media tone={6} /><div className="footer__shade" /></div>
+      <div className="footer__bg"><Media {...IMG.tempelInnen} /><div className="footer__shade" /></div>
       <div className="container footer__inner">
         <div className="footer__cta">
           <h2>Bereit für die erste Stunde auf der Matte?</h2>

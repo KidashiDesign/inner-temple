@@ -5,6 +5,7 @@ import { scrollToTarget } from '../lib/scroll.js'
 import Page from '../components/Page.jsx'
 import Button from '../components/Button.jsx'
 import Media from '../components/Media.jsx'
+import { IMG } from '../data/images.js'
 import Badge from '../components/Badge.jsx'
 import SectionHeader from '../components/SectionHeader.jsx'
 import BackgroundLines from '../components/BackgroundLines.jsx'
@@ -119,6 +120,11 @@ function useHomeAnimations(scope) {
   )
 }
 
+const OFFER_IMGS = [IMG.morgenlicht, IMG.namaste, IMG.berge]
+const PRACTICE_IMGS = [IMG.morgenlicht, IMG.atem, IMG.namaste, IMG.retreatGruppe, IMG.kurs]
+const SCHED_NARROW = [IMG.palasttuer, IMG.oellampen, IMG.gong]
+const SCHED_WIDE = [IMG.morgenlicht, IMG.kurs, IMG.retreatGruppe]
+
 export default function Home() {
   const ref = useRef(null)
   useHomeAnimations(ref)
@@ -130,7 +136,7 @@ export default function Home() {
         {/* 1 Hero */}
         <section className="hero">
           <div className="hero__bg">
-            <Media tone={6} className="hero__img" data-hero-img label="Hero-Bild" />
+            <Media {...IMG.hero} className="hero__img" data-hero-img label="Hero-Bild" />
             <div className="hero__shade" />
             <BackgroundLines />
           </div>
@@ -141,7 +147,7 @@ export default function Home() {
               <p data-banner>Platzhaltertext: ein bis zwei Sätze, die beschreiben, was Gäste bei {site.name} erwartet und für wen das Angebot gedacht ist.</p>
             </div>
             <aside className="hero__card">
-              <div className="hero__card-media"><Media tone={2} label="Video / Bild" /><span className="playbtn" aria-hidden="true"><Play /></span></div>
+              <div className="hero__card-media"><Media {...IMG.tempelInnen} /><span className="playbtn" aria-hidden="true"><Play /></span></div>
               <div className="hero__card-body">
                 <div className="accent-text">Nächster Kurs</div>
                 <div className="t-h4">Morgenpraxis</div>
@@ -174,7 +180,7 @@ export default function Home() {
           {/* 3 Video-Band */}
           <section className="section section--top vband">
             <div className="vband__box">
-              <Media tone={3} className="vband__media" label="Video" />
+              <Media {...IMG.berge} className="vband__media" />
               <div className="vband__btn"><span className="playbtn" aria-hidden="true"><Play /></span><span>Film ansehen</span></div>
             </div>
           </section>
@@ -189,7 +195,7 @@ export default function Home() {
               <div className="offer-grid" data-flip-group>
                 {home.offerings.map((o, i) => (
                   <article className="offer" data-flip key={o.title}>
-                    <Media tone={i + 3} />
+                    <Media {...OFFER_IMGS[i]} />
                     <div className="offer__label"><span className="offer__star"><Star /></span><span className="t-h5">{o.title}</span></div>
                     <div className="offer__text"><p>{o.text}</p></div>
                   </article>
@@ -206,7 +212,7 @@ export default function Home() {
           <section className="section bg-alt">
             <div className="container split">
               <div className="split__media" data-image>
-                <Media tone={1} data-zoom label="Bild" />
+                <Media {...IMG.kurs} data-zoom />
                 <div className="split__badge"><Badge>Ruhe und Achtsamkeit</Badge></div>
               </div>
               <div className="split__body">
@@ -234,10 +240,10 @@ export default function Home() {
               <div className="t-big" data-blur>Raum für <span className="accent">Ruhe</span></div>
               <button type="button" className="benefits__scroll" onClick={() => scrollToTarget('#team')} aria-label="Zum Team scrollen"><ArrowDown /></button>
             </div>
-            <div className="benefits__bg"><Media tone={5} /><div className="benefits__shade" /></div>
+            <div className="benefits__bg"><Media {...IMG.schrein} /><div className="benefits__shade" /></div>
             <div className="container benefits__cards">
               <div className="benefits__grid">
-                <div className="benefits__photo" data-rise><Media tone={2} label="Bild" /></div>
+                <div className="benefits__photo" data-rise><Media {...IMG.retreatGruppe} /></div>
                 <div className="benefits__card benefits__card--center" data-rise>
                   <span className="accent-text t-h3"><Lotus /></span>
                   <div className="t-h4">Platzhalter: ein zentraler Satz zum Nutzen der Praxis</div>
@@ -250,7 +256,7 @@ export default function Home() {
                     <div className="t-h5">Platzhalter: zweiter Nutzen in einem kurzen Satz</div>
                     <div className="benefits__pills"><Badge variant="outline">Achtsam</Badge><Badge variant="accent">Persönlich</Badge></div>
                   </div>
-                  <div className="benefits__photo benefits__photo--small" data-rise><Media tone={4} label="Bild" /></div>
+                  <div className="benefits__photo benefits__photo--small" data-rise><Media {...IMG.atem} /></div>
                 </div>
               </div>
             </div>
@@ -271,7 +277,7 @@ export default function Home() {
               <SectionHeader eyebrow="Unsere Praxis" title="Was Yoga bei uns" accent="bewirkt" />
               <div className="split practice">
                 <div className="split__media practice__photos">
-                  {home.practice.map((p, i) => <Media key={p} tone={i + 1} className="practice__photo" label={`Bild ${i + 1}`} />)}
+                  {home.practice.map((p, i) => <Media key={p} {...PRACTICE_IMGS[i % PRACTICE_IMGS.length]} className="practice__photo" />)}
                 </div>
                 <div className="split__body">
                   <div className="practice__list">
@@ -305,8 +311,8 @@ export default function Home() {
                       <div><Button to="/kurse">Zu den Kursen</Button></div>
                     </div>
                     <div className={`sched__imgs${i % 2 ? ' sched__imgs--flip' : ''}`}>
-                      <div className="sched__img sched__img--narrow"><Media tone={i + 2} /></div>
-                      <div className="sched__img sched__img--wide"><Media tone={i + 4} /></div>
+                      <div className="sched__img sched__img--narrow"><Media {...SCHED_NARROW[i % 3]} /></div>
+                      <div className="sched__img sched__img--wide"><Media {...SCHED_WIDE[i % 3]} /></div>
                     </div>
                   </article>
                 ))}

@@ -5,11 +5,13 @@ import Page from '../components/Page.jsx'
 import PageHero from '../components/PageHero.jsx'
 import Button from '../components/Button.jsx'
 import Media from '../components/Media.jsx'
+import { IMG } from '../data/images.js'
 import Badge from '../components/Badge.jsx'
 import SectionHeader from '../components/SectionHeader.jsx'
 import LogoMarquee from '../components/LogoMarquee.jsx'
 import site from '../data/site.json'
 import classes from '../data/classes.json'
+const CLASS_IMGS = [IMG.morgenlicht, IMG.kurs, IMG.namaste, IMG.atem, IMG.retreatGruppe, IMG.berge, IMG.oellampen, IMG.gong, IMG.tempelInnen]
 
 function ClassCard({ item, index }) {
   const ref = useRef(null)
@@ -27,7 +29,7 @@ function ClassCard({ item, index }) {
   return (
     <article ref={ref} className="ccard">
       <div className="ccard__media">
-        <Media src={item.image} tone={index + 1} label="Kursbild" alt={item.title} />
+        <Media src={item.image || CLASS_IMGS[index % CLASS_IMGS.length].src} tone={index + 1} label="Kursbild" alt={item.image ? item.title : `${item.title}: ${CLASS_IMGS[index % CLASS_IMGS.length].alt}`} />
         <div className="ccard__overlay"><Button to="/kontakt">Platz anfragen</Button></div>
       </div>
       <div className="ccard__body">

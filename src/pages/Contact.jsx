@@ -1,5 +1,6 @@
 import Page from '../components/Page.jsx'
 import Media from '../components/Media.jsx'
+import { IMG } from '../data/images.js'
 import ContactForm from '../components/ContactForm.jsx'
 import Faq from '../components/Faq.jsx'
 import site from '../data/site.json'
@@ -26,7 +27,7 @@ export default function Contact() {
               <p data-banner>Platzhaltertext: kurzer Hinweis, wie schnell Anfragen beantwortet werden und wofür das Formular gedacht ist.</p>
             </div>
           </div>
-          <div className="chero__image"><Media tone={3} data-hero-img label="Bild" /></div>
+          <div className="chero__image"><Media {...IMG.oellampen} data-hero-img /></div>
           <ContactForm />
         </div>
       </section>
