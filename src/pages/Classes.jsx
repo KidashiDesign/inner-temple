@@ -15,6 +15,7 @@ const CLASS_IMGS = [IMG.morgenlicht, IMG.kurs, IMG.namaste, IMG.atem, IMG.retrea
 
 function ClassCard({ item, index }) {
   const ref = useRef(null)
+  const fallback = CLASS_IMGS[index % CLASS_IMGS.length]
   useGSAP(
     () => {
       const ac = new AbortController()
@@ -29,7 +30,7 @@ function ClassCard({ item, index }) {
   return (
     <article ref={ref} className="ccard">
       <div className="ccard__media">
-        <Media src={item.image || CLASS_IMGS[index % CLASS_IMGS.length].src} tone={index + 1} label="Kursbild" alt={item.image ? item.title : `${item.title}: ${CLASS_IMGS[index % CLASS_IMGS.length].alt}`} />
+        <Media src={item.image || fallback.src} ai={!item.image && fallback.ai} tone={index + 1} label="Kursbild" alt={item.image ? item.title : `${item.title}: ${fallback.alt}`} />
         <div className="ccard__overlay"><Button to="/kontakt">Platz anfragen</Button></div>
       </div>
       <div className="ccard__body">

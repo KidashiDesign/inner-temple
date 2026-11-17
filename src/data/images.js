@@ -1,5 +1,15 @@
-// Bildquellen (Magnific-Lizenzfotos, als WebP in public/images). Alt-Texte beschreiben das Motiv.
-const p = (name, alt) => ({ src: `/images/${name}.webp`, alt })
+// Bildquellen (Magnific-Lizenzbilder, als WebP in public/images). Alt-Texte beschreiben das Motiv.
+//
+// KI-KENNZEICHNUNG: Alle Bilder dieser Website werden als KI-generiert gekennzeichnet
+// (Transparenzpflicht für KI-Inhalte, Art. 50 KI-Verordnung (EU) 2024/1689).
+// - `ai: true` setzt im HTML `data-ai-generated="true"` und ergänzt den Alt-Text um
+//   „(KI-generiertes Bild)“ (siehe components/Media.jsx).
+// - Der sichtbare Hinweis steht im Footer (components/Footer.jsx).
+// - Ist ein Bild nachweislich ein echtes Foto, hier `ai: false` setzen. Die Stock-Metadaten
+//   der Bibliothek führen alle 12 Bilder derzeit als „nicht KI-generiert“; die Kennzeichnung
+//   beruht auf der Angabe des Auftraggebers und sollte vor dem Livegang geprüft werden.
+const AI_GENERATED = true
+const p = (name, alt) => ({ src: `/images/${name}.webp`, alt, ai: AI_GENERATED })
 
 export const IMG = {
   hero: p('hero-tempelsaeulen-sonnenlicht', 'Sonnenlicht fällt durch geschnitzte Säulen eines Tempelgangs'),
