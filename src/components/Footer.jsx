@@ -47,7 +47,7 @@ export default function Footer() {
         </div>
         <div className="footer__bar">
           <div>© {new Date().getFullYear()} {site.name}</div>
-          <div>Demo-Website mit Platzhalterinhalten</div>
+          <div>Demo-Website mit Beispielinhalten</div>
           <div className="footer__ai">Hinweis: Alle Bilder auf dieser Website sind KI-generiert.</div>
         </div>
       </div>

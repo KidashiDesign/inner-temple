@@ -50,14 +50,14 @@ export default function Classes() {
   return (
     <Page>
       <PageHero align="center" eyebrow="Kurse" title="Finden Sie die Stunde, die zu Ihnen" accent="passt">
-        <LogoMarquee items={site.partners} variant="glass" />
+        <LogoMarquee items={site.styles} variant="glass" />
       </PageHero>
 
       <section className="section">
         <div className="container">
           <div className="head-split">
             <SectionHeader eyebrow="Kursangebot" title="Yoga für jedes" accent="Niveau" />
-            <p data-blur>Platzhaltertext: kurzer Hinweis zu Kursgrößen, Dauer und Buchung.</p>
+            <p data-blur>Alle Kurse finden in kleinen Gruppen statt. Dauer und Stufe stehen an jedem Kurs, Plätze reservieren Sie über das Kontaktformular.</p>
           </div>
           <div className="tabs" role="tablist" aria-label="Niveau" data-blur>
             {tabs.map((t, i) => (

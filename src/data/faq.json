@@ -1,7 +1,22 @@
 [
-  { "question": "Brauche ich Vorerfahrung?", "answer": "Platzhalterantwort: Nein, die Einsteigerkurse setzen keine Erfahrung voraus. Bitte den finalen Text hier eintragen." },
-  { "question": "Was soll ich mitbringen?", "answer": "Platzhalterantwort: Bequeme Kleidung genügt. Bitte den finalen Text hier eintragen." },
-  { "question": "Wie buche ich eine Probestunde?", "answer": "Platzhalterantwort: Über das Kontaktformular. Bitte den finalen Text hier eintragen." },
-  { "question": "Kann ich Kurse stornieren?", "answer": "Platzhalterantwort: Bitte die geltenden Bedingungen hier eintragen." },
-  { "question": "Gibt es Parkplätze vor Ort?", "answer": "Platzhalterantwort: Bitte Anfahrt und Parkmöglichkeiten hier eintragen." }
+  {
+    "question": "Brauche ich Vorerfahrung?",
+    "answer": "Nein. Die Kurse der Stufe Einsteiger sind für Menschen ohne Vorkenntnisse gedacht. Sagen Sie uns einfach, wo Sie stehen – wir zeigen Ihnen Varianten, die zu Ihnen passen."
+  },
+  {
+    "question": "Was soll ich mitbringen?",
+    "answer": "Bequeme Kleidung, in der Sie sich frei bewegen können, und etwas zu trinken. Ob Sie Matte und Decke selbst mitbringen, klären wir bei der Buchung."
+  },
+  {
+    "question": "Wie buche ich eine Probestunde?",
+    "answer": "Schreiben Sie uns über das Kontaktformular oder rufen Sie an. Nennen Sie den gewünschten Kurs, wir melden uns mit einem Terminvorschlag."
+  },
+  {
+    "question": "Kann ich einen Termin absagen?",
+    "answer": "Wenn Sie einen Termin nicht wahrnehmen können, geben Sie uns bitte rechtzeitig Bescheid. Die genauen Fristen nennen wir Ihnen bei der Buchung."
+  },
+  {
+    "question": "Wie komme ich zu Ihnen?",
+    "answer": "Hinweise zur Anreise und zu Parkmöglichkeiten erhalten Sie mit der Buchungsbestätigung."
+  }
 ]

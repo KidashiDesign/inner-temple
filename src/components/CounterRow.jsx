@@ -1,8 +1,13 @@
+import classes from '../data/classes.json'
+import instructors from '../data/instructors.json'
+import home from '../data/home.json'
+
+// Zahlen werden aus den Daten abgeleitet, damit sie immer stimmen.
 const items = [
-  { value: '15+', text: 'Platzhalter: Jahre Erfahrung' },
-  { value: '8', text: 'Platzhalter: Lehrende im Team' },
-  { value: '30+', text: 'Platzhalter: Kurse pro Woche' },
-  { value: '100%', text: 'Platzhalter: Hingabe an die Praxis' },
+  { value: String(instructors.length), text: 'Lehrende im Team' },
+  { value: String(classes.items.length), text: 'Kurse im Programm' },
+  { value: String(classes.levels.length), text: 'Stufen, vom ersten Mal bis therapeutisch' },
+  { value: String(home.programs.length), text: 'Wege: Yoga, Meditation, Atemarbeit und Retreats' },
 ]
 
 export default function CounterRow() {

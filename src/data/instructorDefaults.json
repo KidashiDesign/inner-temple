@@ -1,21 +1,35 @@
 {
-  "quote": "Platzhalter-Zitat: Ein persönlicher Satz der Lehrperson über ihre Art zu unterrichten und das, was Teilnehmende aus der Stunde mitnehmen.",
-  "bioTitle": "Über mich",
-  "shortBio": "Platzhaltertext für die Kurzbiografie. Hier stehen Werdegang, Ausbildung und der persönliche Zugang zum Yoga in drei bis vier Sätzen.",
-  "specialty": "Schwerpunkt eintragen",
-  "certifications": "Ausbildungen eintragen",
-  "workingDays": "Unterrichtstage eintragen",
-  "designation": "Position eintragen",
-  "bioSummary": "Ein Satz, der die Lehrperson zusammenfasst.",
-  "experience": "Jahre Erfahrung eintragen",
-  "teachingStyle": "Unterrichtsstil eintragen",
-  "email": "team@example.com",
+  "quote": "Yoga beginnt dort, wo man sich Zeit nimmt.",
+  "bioTitle": "Zur Person",
+  "shortBio": "Ein Mitglied unseres Teams, das Sie mit Ruhe und Sorgfalt durch die Stunde begleitet.",
+  "specialty": "Yoga",
+  "certifications": "Yogalehrer-Ausbildung",
+  "workingDays": "Nach Stundenplan",
+  "designation": "Yogalehrer:in",
+  "bioSummary": "Ruhige, klare Anleitung.",
+  "experience": "Langjährige Unterrichtserfahrung",
+  "teachingStyle": "Achtsam und klar",
+  "email": "hallo@example.com",
   "phone": "+49 000 0000000",
   "philosophy": [
-    { "title": "Achtsamkeit", "text": "Platzhaltertext zu diesem Grundsatz des Unterrichts." },
-    { "title": "Atem", "text": "Platzhaltertext zu diesem Grundsatz des Unterrichts." },
-    { "title": "Ausrichtung", "text": "Platzhaltertext zu diesem Grundsatz des Unterrichts." }
+    {
+      "title": "Achtsamkeit",
+      "text": "Wahrnehmen, bevor man etwas verändert."
+    },
+    {
+      "title": "Atem",
+      "text": "Der Atem bestimmt das Tempo."
+    },
+    {
+      "title": "Ausrichtung",
+      "text": "Saubere Haltungen schützen den Körper."
+    }
   ],
-  "benefits": ["Vorteil eins", "Vorteil zwei", "Vorteil drei", "Vorteil vier"],
-  "closingText": "Platzhaltertext: Einladung, eine Stunde bei dieser Lehrperson zu besuchen."
+  "benefits": [
+    "Mehr Ruhe",
+    "Mehr Beweglichkeit",
+    "Mehr Kraft",
+    "Mehr Klarheit"
+  ],
+  "closingText": "Möchten Sie eine Stunde kennenlernen? Schreiben Sie uns, wir finden den passenden Kurs für Sie."
 }

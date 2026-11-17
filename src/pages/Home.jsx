@@ -11,9 +11,10 @@ import SectionHeader from '../components/SectionHeader.jsx'
 import BackgroundLines from '../components/BackgroundLines.jsx'
 import LogoMarquee from '../components/LogoMarquee.jsx'
 import InstructorCard from '../components/InstructorCard.jsx'
-import { Lotus, Star, Clock, User, Check, Play, ArrowDown } from '../components/Icons.jsx'
+import { Lotus, Star, Clock, User, Check, ArrowDown } from '../components/Icons.jsx'
 import site from '../data/site.json'
 import home from '../data/home.json'
+import classes from '../data/classes.json'
 import instructors from '../data/instructors.json'
 
 /** Section-specific motion of the home page. Shared reveals come from <Page>. */
@@ -127,6 +128,7 @@ const SCHED_WIDE = [IMG.morgenlicht, IMG.kurs, IMG.retreatGruppe]
 
 export default function Home() {
   const ref = useRef(null)
+  const morning = classes.items[0]
   useHomeAnimations(ref)
   const team = instructors.filter((p) => p.featured)
 
@@ -144,17 +146,17 @@ export default function Home() {
             <div className="stack hero__text">
               <div className="eyebrow" data-banner>Willkommen im Retreat</div>
               <h1 data-banner>Ankommen, atmen, <span className="accent">loslassen</span></h1>
-              <p data-banner>Platzhaltertext: ein bis zwei Sätze, die beschreiben, was Gäste bei {site.name} erwartet und für wen das Angebot gedacht ist.</p>
+              <p data-banner>Bei {site.name} üben Sie in ruhiger Umgebung, in kleinen Gruppen und mit klarer Anleitung – ob Sie zum ersten Mal auf der Matte stehen oder schon lange praktizieren.</p>
             </div>
             <aside className="hero__card">
-              <div className="hero__card-media"><Media {...IMG.tempelInnen} /><span className="playbtn" aria-hidden="true"><Play /></span></div>
+              <div className="hero__card-media"><Media {...IMG.tempelInnen} /></div>
               <div className="hero__card-body">
-                <div className="accent-text">Nächster Kurs</div>
-                <div className="t-h4">Morgenpraxis</div>
+                <div className="accent-text">Kurs am Morgen</div>
+                <div className="t-h4">{morning.title}</div>
                 <ul className="hero__facts">
-                  <li><Clock /> 07:00</li><li><User /> Alle Level</li><li><Lotus /> 60 Min.</li>
+                  <li><Clock /> {morning.time}</li><li><User /> {morning.tags[0]}</li><li><Lotus /> {morning.tags[1]}</li>
                 </ul>
-                <span className="hero__tag">Plätze frei</span>
+                <span className="hero__tag">Probestunde möglich</span>
               </div>
             </aside>
           </div>
@@ -181,7 +183,7 @@ export default function Home() {
           <section className="section section--top vband">
             <div className="vband__box">
               <Media {...IMG.berge} className="vband__media" />
-              <div className="vband__btn"><span className="playbtn" aria-hidden="true"><Play /></span><span>Film ansehen</span></div>
+              <div className="vband__btn"><span className="eyebrow">Ein Blick ins Retreat</span></div>
             </div>
           </section>
 
@@ -190,7 +192,7 @@ export default function Home() {
             <div className="container">
               <div className="head-split">
                 <SectionHeader eyebrow="Formate" title="Praxis, die zu Ihrem" accent="Alltag" after="passt" />
-                <p data-blur>Platzhaltertext: kurze Einordnung der drei Formate und wie sie sich ergänzen.</p>
+                <p data-blur>Ob allein, in der Gruppe oder für ein ganzes Wochenende: Die drei Formate lassen sich frei kombinieren.</p>
               </div>
               <div className="offer-grid" data-flip-group>
                 {home.offerings.map((o, i) => (
@@ -203,7 +205,7 @@ export default function Home() {
               </div>
               <div className="quote">
                 <span className="quote__star"><Star /></span>
-                <p data-blur>Platzhalter-Leitsatz: Yoga ist bei uns <span className="quote__mark">kein Programm</span>, sondern eine Einladung, bei sich anzukommen.</p>
+                <p data-blur>Yoga ist bei uns <span className="quote__mark">kein Programm</span>, sondern eine Einladung, bei sich anzukommen.</p>
               </div>
             </div>
           </section>
@@ -219,7 +221,7 @@ export default function Home() {
                 <div className="stack">
                   <div className="eyebrow" data-blur>Warum wir</div>
                   <h2 data-blur>Ein Ort für echte <span className="accent">Erholung</span></h2>
-                  <p data-blur>Platzhaltertext: zwei bis drei Sätze über Haltung, Räume und Atmosphäre des Retreats.</p>
+                  <p data-blur>Bei uns zählt nicht, wie weit Sie sich beugen können, sondern wie Sie sich dabei fühlen. Ruhige Räume, klare Anleitung und viel Zeit zum Ankommen prägen jede Stunde.</p>
                   <div data-blur><Button to="/ueber-uns">Mehr über uns</Button></div>
                 </div>
                 <div className="features">
@@ -246,14 +248,14 @@ export default function Home() {
                 <div className="benefits__photo" data-rise><Media {...IMG.retreatGruppe} /></div>
                 <div className="benefits__card benefits__card--center" data-rise>
                   <span className="accent-text t-h3"><Lotus /></span>
-                  <div className="t-h4">Platzhalter: ein zentraler Satz zum Nutzen der Praxis</div>
-                  <div className="benefits__stat"><span>Zufriedenheit</span><strong>00 %</strong><span>der Gäste</span></div>
-                  <p>Platzhalter – Zahl bitte durch echte Angabe ersetzen.</p>
+                  <div className="t-h4">Weniger Anspannung, mehr Klarheit: Regelmäßige Praxis tut Körper und Geist gut.</div>
+                  <div className="benefits__stat"><span>Im Programm</span><strong>{classes.items.length}</strong><span>Kurse in {classes.levels.length} Stufen</span></div>
+                  <p>Vom sanften Einstieg bis zur kraftvollen Serie – wählen Sie, was heute zu Ihnen passt.</p>
                 </div>
                 <div className="benefits__col">
                   <div className="benefits__card" data-rise>
                     <span className="accent-text t-h3"><Star /></span>
-                    <div className="t-h5">Platzhalter: zweiter Nutzen in einem kurzen Satz</div>
+                    <div className="t-h5">Persönliche Anleitung in jeder Stunde, auch für Einsteiger</div>
                     <div className="benefits__pills"><Badge variant="outline">Achtsam</Badge><Badge variant="accent">Persönlich</Badge></div>
                   </div>
                   <div className="benefits__photo benefits__photo--small" data-rise><Media {...IMG.atem} /></div>
@@ -266,9 +268,9 @@ export default function Home() {
           <section className="partners">
             <div className="partners__label">
               <span className="partners__fill" />
-              <div className="partners__label-inner"><Star /><span className="t-h5">Partner und Netzwerk</span></div>
+              <div className="partners__label-inner"><Star /><span className="t-h5">Unsere Stile</span></div>
             </div>
-            <LogoMarquee items={site.partners} />
+            <LogoMarquee items={site.styles} />
           </section>
 
           {/* 8 Praxis */}

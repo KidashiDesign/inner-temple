@@ -1,10 +1,298 @@
 [
-  { "slug": "lehrperson-1", "name": "Vorname Nachname", "role": "Hatha & Meditation", "image": null, "featured": true },
-  { "slug": "lehrperson-2", "name": "Vorname Nachname", "role": "Vinyasa Flow", "image": null, "featured": true },
-  { "slug": "lehrperson-3", "name": "Vorname Nachname", "role": "Yin Yoga", "image": null, "featured": true },
-  { "slug": "lehrperson-4", "name": "Vorname Nachname", "role": "Atemarbeit", "image": null, "featured": true },
-  { "slug": "lehrperson-5", "name": "Vorname Nachname", "role": "Yoga-Therapie", "image": null, "featured": false },
-  { "slug": "lehrperson-6", "name": "Vorname Nachname", "role": "Ashtanga", "image": null, "featured": false },
-  { "slug": "lehrperson-7", "name": "Vorname Nachname", "role": "Klangreise", "image": null, "featured": false },
-  { "slug": "lehrperson-8", "name": "Vorname Nachname", "role": "Yoga für Einsteiger", "image": null, "featured": false }
+  {
+    "slug": "lehrperson-1",
+    "name": "Mira Hofmann",
+    "role": "Hatha & Meditation",
+    "image": null,
+    "featured": true,
+    "designation": "Yogalehrerin",
+    "quote": "Wer langsam übt, kommt weiter, als er denkt. Ich möchte, dass Sie nach der Stunde ruhiger gehen, als Sie gekommen sind.",
+    "shortBio": "Mira unterrichtet Hatha Yoga und leitet die Meditationsstunden. Sie legt Wert auf klare Anleitung, genaue Ausrichtung und eine Atmosphäre, in der niemand etwas beweisen muss.",
+    "specialty": "Hatha Yoga, Meditation",
+    "certifications": "Mehrjährige Yogalehrer-Ausbildung, Weiterbildung in Meditationsanleitung",
+    "workingDays": "Montag bis Freitag",
+    "bioSummary": "Ruhige, genaue Anleitung für Einsteiger und Wiedereinsteiger.",
+    "experience": "Langjährige Unterrichtserfahrung",
+    "teachingStyle": "Langsam, präzise, mit viel Raum für den Atem",
+    "email": "mira@example.com",
+    "philosophy": [
+      {
+        "title": "Achtsamkeit",
+        "text": "Jede Haltung beginnt mit dem Spüren: Wo bin ich gerade, und was braucht mein Körper?"
+      },
+      {
+        "title": "Atem",
+        "text": "Der Atem gibt das Tempo vor – nicht der Ehrgeiz."
+      },
+      {
+        "title": "Ausrichtung",
+        "text": "Saubere Grundhaltungen schützen die Gelenke und machen die Praxis nachhaltig."
+      }
+    ],
+    "benefits": [
+      "Mehr Ruhe im Alltag",
+      "Eine aufrechtere, entspanntere Haltung",
+      "Besserer Schlaf durch Abendroutinen",
+      "Ein sicherer Einstieg in die Meditation"
+    ]
+  },
+  {
+    "slug": "lehrperson-2",
+    "name": "Jonas Keller",
+    "role": "Vinyasa Flow",
+    "image": null,
+    "featured": true,
+    "designation": "Yogalehrer",
+    "quote": "Bewegung und Atem gehören zusammen. Wenn beides im Fluss ist, wird der Kopf von allein still.",
+    "shortBio": "Jonas unterrichtet Vinyasa Flow und Power Flow. Seine Stunden sind dynamisch, aber nie hektisch: Jede Sequenz wird erklärt, bevor sie zusammengesetzt wird.",
+    "specialty": "Vinyasa Flow, Power Flow",
+    "certifications": "Yogalehrer-Ausbildung, Weiterbildung in Sequenzaufbau",
+    "workingDays": "Dienstag bis Samstag",
+    "bioSummary": "Fließende Stunden für Kraft, Beweglichkeit und Ausdauer.",
+    "experience": "Langjährige Unterrichtserfahrung",
+    "teachingStyle": "Rhythmisch, klar strukturiert, mit Humor",
+    "email": "jonas@example.com",
+    "philosophy": [
+      {
+        "title": "Fluss",
+        "text": "Übergänge sind genauso wichtig wie die Haltungen selbst."
+      },
+      {
+        "title": "Kraft",
+        "text": "Stabilität entsteht aus der Mitte und lässt sich Schritt für Schritt aufbauen."
+      },
+      {
+        "title": "Freude",
+        "text": "Wer sich gern bewegt, bleibt dran."
+      }
+    ],
+    "benefits": [
+      "Mehr Kraft und Beweglichkeit",
+      "Bessere Körperwahrnehmung",
+      "Ausdauer für Alltag und Sport",
+      "Ein klarer Kopf nach der Stunde"
+    ]
+  },
+  {
+    "slug": "lehrperson-3",
+    "name": "Lena Brandt",
+    "role": "Yin Yoga",
+    "image": null,
+    "featured": true,
+    "designation": "Yogalehrerin",
+    "quote": "Manchmal ist das Mutigste, einfach liegen zu bleiben und zu atmen.",
+    "shortBio": "Lena unterrichtet Yin Yoga und Restorative. In langen, gehaltenen Haltungen gibt sie Zeit, Spannung loszulassen und zur Ruhe zu kommen.",
+    "specialty": "Yin Yoga, Restorative",
+    "certifications": "Yogalehrer-Ausbildung, Weiterbildung in Yin Yoga",
+    "workingDays": "Montag, Mittwoch, Freitag",
+    "bioSummary": "Tiefe Entspannung durch lange gehaltene Haltungen.",
+    "experience": "Langjährige Unterrichtserfahrung",
+    "teachingStyle": "Leise, geduldig, mit klaren Hilfestellungen",
+    "email": "lena@example.com",
+    "philosophy": [
+      {
+        "title": "Loslassen",
+        "text": "Nicht tun, sondern geschehen lassen: Das ist die eigentliche Übung."
+      },
+      {
+        "title": "Zeit",
+        "text": "Lange Haltungen wirken auf Gewebe und Gemüt zugleich."
+      },
+      {
+        "title": "Unterstützung",
+        "text": "Decken und Kissen machen es leicht, sich wirklich zu entspannen."
+      }
+    ],
+    "benefits": [
+      "Tiefe Dehnung ohne Anstrengung",
+      "Abbau von Anspannung am Abend",
+      "Mehr Gelassenheit im Alltag",
+      "Besserer Schlaf"
+    ]
+  },
+  {
+    "slug": "lehrperson-4",
+    "name": "Arjun Mehta",
+    "role": "Atemarbeit",
+    "image": null,
+    "featured": true,
+    "designation": "Yogalehrer",
+    "quote": "Der Atem ist das Einzige, das Sie immer dabeihaben. Ich zeige Ihnen, wie Sie ihn nutzen.",
+    "shortBio": "Arjun leitet die Atemarbeit und die Meditationsabende. Er vermittelt Pranayama-Techniken so, dass sie sich leicht in den Alltag übertragen lassen.",
+    "specialty": "Pranayama, Atemarbeit",
+    "certifications": "Yogalehrer-Ausbildung, Weiterbildung in Pranayama",
+    "workingDays": "Dienstag und Donnerstag",
+    "bioSummary": "Atemtechniken für Gelassenheit und Energie.",
+    "experience": "Langjährige Unterrichtserfahrung",
+    "teachingStyle": "Ruhig, erklärend, praxisnah",
+    "email": "arjun@example.com",
+    "philosophy": [
+      {
+        "title": "Beobachten",
+        "text": "Zuerst wahrnehmen, dann verändern – das gilt für den Atem wie für den Alltag."
+      },
+      {
+        "title": "Rhythmus",
+        "text": "Ein gleichmäßiger Atem beruhigt, ein bewusster Atem macht wach."
+      },
+      {
+        "title": "Alltag",
+        "text": "Jede Technik muss sich in wenigen Minuten üben lassen."
+      }
+    ],
+    "benefits": [
+      "Mehr Gelassenheit in stressigen Momenten",
+      "Kurze Übungen für zwischendurch",
+      "Mehr Energie am Tag",
+      "Ein ruhiger Einstieg in die Meditation"
+    ]
+  },
+  {
+    "slug": "lehrperson-5",
+    "name": "Hannah Vogel",
+    "role": "Yoga-Therapie",
+    "image": null,
+    "featured": false,
+    "designation": "Yogalehrerin mit therapeutischem Schwerpunkt",
+    "quote": "Ein Körper, der sich sicher fühlt, kann loslassen. Dafür sind wir da.",
+    "shortBio": "Hannah verbindet Yoga mit gezielten Übungen für Rücken, Nacken und Schultern. Sie passt Haltungen individuell an – auch bei Beschwerden.",
+    "specialty": "Yoga-Therapie, Rücken & Atem",
+    "certifications": "Yogalehrer-Ausbildung, Weiterbildung in therapeutischem Yoga",
+    "workingDays": "Montag bis Mittwoch",
+    "bioSummary": "Sanfte, gezielte Übungen bei Verspannungen.",
+    "experience": "Langjährige Unterrichtserfahrung",
+    "teachingStyle": "Achtsam, individuell, mit vielen Varianten",
+    "email": "hannah@example.com",
+    "philosophy": [
+      {
+        "title": "Sicherheit",
+        "text": "Jede Übung lässt sich so verändern, dass sie sich gut anfühlt."
+      },
+      {
+        "title": "Genauigkeit",
+        "text": "Kleine Anpassungen machen oft den größten Unterschied."
+      },
+      {
+        "title": "Geduld",
+        "text": "Der Körper braucht Zeit, um Neues zu lernen."
+      }
+    ],
+    "benefits": [
+      "Mehr Beweglichkeit in Rücken und Schultern",
+      "Entspannung für Nacken und Kiefer",
+      "Übungen für Büro und Zuhause",
+      "Ein vertrauensvolles Körpergefühl"
+    ]
+  },
+  {
+    "slug": "lehrperson-6",
+    "name": "Tobias Reuter",
+    "role": "Ashtanga",
+    "image": null,
+    "featured": false,
+    "designation": "Yogalehrer",
+    "quote": "Eine feste Reihenfolge schenkt Freiheit: Wenn der Ablauf sitzt, bleibt Raum für den Atem.",
+    "shortBio": "Tobias unterrichtet Ashtanga Yoga am frühen Morgen. Er führt Geübte Schritt für Schritt durch die feste Serie und erklärt dabei jede Variante.",
+    "specialty": "Ashtanga Yoga",
+    "certifications": "Yogalehrer-Ausbildung, Ashtanga-Weiterbildung",
+    "workingDays": "Montag bis Freitag, früh morgens",
+    "bioSummary": "Kraftvolle, strukturierte Praxis für Geübte.",
+    "experience": "Langjährige Unterrichtserfahrung",
+    "teachingStyle": "Diszipliniert, aber freundlich",
+    "email": "tobias@example.com",
+    "philosophy": [
+      {
+        "title": "Regelmäßigkeit",
+        "text": "Wer täglich ein wenig übt, kommt weiter als mit seltenen langen Stunden."
+      },
+      {
+        "title": "Struktur",
+        "text": "Die feste Serie gibt Halt und macht Fortschritt sichtbar."
+      },
+      {
+        "title": "Atem",
+        "text": "Ujjayi-Atmung hält Körper und Geist im Takt."
+      }
+    ],
+    "benefits": [
+      "Kraft und Ausdauer",
+      "Ein fester Rhythmus für den Morgen",
+      "Mehr Konzentration",
+      "Fortschritt, den man spürt"
+    ]
+  },
+  {
+    "slug": "lehrperson-7",
+    "name": "Sophie Lorenz",
+    "role": "Klangreise",
+    "image": null,
+    "featured": false,
+    "designation": "Yogalehrerin",
+    "quote": "Klang erreicht uns dort, wo Worte aufhören.",
+    "shortBio": "Sophie gestaltet Klangreisen und Entspannungsabende. Mit Klangschalen und Gong begleitet sie die Schlussentspannung und lädt zum Nachspüren ein.",
+    "specialty": "Klangreisen, Tiefenentspannung",
+    "certifications": "Yogalehrer-Ausbildung, Weiterbildung in Klangarbeit",
+    "workingDays": "Freitag und Samstag",
+    "bioSummary": "Entspannung mit Klangschalen und Gong.",
+    "experience": "Langjährige Unterrichtserfahrung",
+    "teachingStyle": "Sanft, atmosphärisch, ohne Eile",
+    "email": "sophie@example.com",
+    "philosophy": [
+      {
+        "title": "Hören",
+        "text": "Wer zuhört, kommt von allein zur Ruhe."
+      },
+      {
+        "title": "Raum",
+        "text": "Stille ist kein Mangel an Klang, sondern Platz zum Wahrnehmen."
+      },
+      {
+        "title": "Hingabe",
+        "text": "Nichts muss, alles darf."
+      }
+    ],
+    "benefits": [
+      "Tiefe Entspannung",
+      "Abschalten nach einem langen Tag",
+      "Mehr Ruhe im Kopf",
+      "Ein sanfter Ausklang der Woche"
+    ]
+  },
+  {
+    "slug": "lehrperson-8",
+    "name": "Elias Sommer",
+    "role": "Yoga für Einsteiger",
+    "image": null,
+    "featured": false,
+    "designation": "Yogalehrer",
+    "quote": "Jeder fängt irgendwo an. Bei uns ist das Anfangen schon der Erfolg.",
+    "shortBio": "Elias betreut die Einsteigerkurse und Yoga Basics. Er erklärt Grundhaltungen verständlich und zeigt, wie sie sich an den eigenen Körper anpassen lassen.",
+    "specialty": "Yoga Basics, Einsteigerkurse",
+    "certifications": "Yogalehrer-Ausbildung, Weiterbildung für Einsteigergruppen",
+    "workingDays": "Montag, Mittwoch, Samstag",
+    "bioSummary": "Verständlicher Einstieg ohne Vorkenntnisse.",
+    "experience": "Langjährige Unterrichtserfahrung",
+    "teachingStyle": "Geduldig, klar, mit vielen Erklärungen",
+    "email": "elias@example.com",
+    "philosophy": [
+      {
+        "title": "Einfachheit",
+        "text": "Gute Praxis braucht keine komplizierten Haltungen."
+      },
+      {
+        "title": "Variation",
+        "text": "Jede Übung hat eine leichtere und eine fordernde Version."
+      },
+      {
+        "title": "Neugier",
+        "text": "Ausprobieren ist erlaubt, Vergleichen nicht nötig."
+      }
+    ],
+    "benefits": [
+      "Sicherer Einstieg ohne Vorkenntnisse",
+      "Verständliche Erklärungen",
+      "Mehr Beweglichkeit Schritt für Schritt",
+      "Freude an der eigenen Praxis"
+    ]
+  }
 ]
