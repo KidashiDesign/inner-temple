@@ -1,24 +1,84 @@
 {
   "programs": [
-    { "title": "Yoga-Kurse", "text": "Platzhaltertext: wöchentliche Kurse für jedes Niveau." },
-    { "title": "Meditation", "text": "Platzhaltertext: geführte Praxis für Ruhe und Klarheit." },
-    { "title": "Atemarbeit", "text": "Platzhaltertext: Pranayama für Energie und Ausgleich." },
-    { "title": "Retreats", "text": "Platzhaltertext: mehrtägige Auszeiten in der Gruppe." }
+    {
+      "title": "Yoga-Kurse",
+      "text": "Wöchentliche Kurse für jedes Niveau – vom sanften Einstieg bis zur kraftvollen Serie."
+    },
+    {
+      "title": "Meditation",
+      "text": "Geführte Praxis für Ruhe, Klarheit und einen freieren Kopf."
+    },
+    {
+      "title": "Atemarbeit",
+      "text": "Pranayama für mehr Energie, Gelassenheit und inneren Ausgleich."
+    },
+    {
+      "title": "Retreats",
+      "text": "Mehrtägige Auszeiten in der Gruppe, weg von Terminen und Bildschirmen."
+    }
   ],
   "offerings": [
-    { "title": "Einzelstunden", "text": "Platzhaltertext: individuelle Begleitung, abgestimmt auf Ihre Ziele." },
-    { "title": "Gruppenkurse", "text": "Platzhaltertext: gemeinsam üben in kleinen Gruppen." },
-    { "title": "Wochenend-Retreats", "text": "Platzhaltertext: zwei Tage Abstand vom Alltag." }
+    {
+      "title": "Einzelstunden",
+      "text": "Persönliche Begleitung, abgestimmt auf Ihren Körper, Ihr Tempo und Ihre Ziele."
+    },
+    {
+      "title": "Gruppenkurse",
+      "text": "Gemeinsam üben in kleinen Gruppen – vom ersten Mal bis zur fortgeschrittenen Praxis."
+    },
+    {
+      "title": "Wochenend-Retreats",
+      "text": "Zwei Tage Abstand vom Alltag mit Yoga, Meditation und Zeit zum Ankommen."
+    }
   ],
   "features": [
-    { "title": "Erfahrene Lehrende", "text": "Platzhaltertext zu diesem Vorteil in ein bis zwei Zeilen." },
-    { "title": "Kleine Gruppen", "text": "Platzhaltertext zu diesem Vorteil in ein bis zwei Zeilen." },
-    { "title": "Ruhige Räume", "text": "Platzhaltertext zu diesem Vorteil in ein bis zwei Zeilen." }
+    {
+      "title": "Erfahrene Lehrende",
+      "text": "Unser Team begleitet Sie mit Ruhe und Sorgfalt und passt Übungen an, wenn Ihr Körper etwas anderes braucht."
+    },
+    {
+      "title": "Kleine Gruppen",
+      "text": "Weniger Teilnehmende bedeuten mehr Aufmerksamkeit für jede einzelne Haltung."
+    },
+    {
+      "title": "Ruhige Räume",
+      "text": "Gedämpftes Licht, wenig Ablenkung und genug Platz, um wirklich abzuschalten."
+    }
   ],
-  "practice": ["Körper kräftigen und dehnen", "Den Atem bewusst führen", "Den Geist zur Ruhe bringen", "Gewohnheiten achtsam verändern", "Gemeinschaft erleben"],
+  "practice": [
+    "Körper kräftigen und dehnen",
+    "Den Atem bewusst führen",
+    "Den Geist zur Ruhe bringen",
+    "Gewohnheiten achtsam verändern",
+    "Gemeinschaft erleben"
+  ],
   "schedule": [
-    { "time": "07:00", "details": ["Mit Lehrperson 1", "Montag bis Freitag"], "title": "Morgenpraxis", "text": "Platzhaltertext: ruhiger Start in den Tag mit Atem und sanfter Bewegung." },
-    { "time": "12:30", "details": ["Mit Lehrperson 2", "Dienstag und Donnerstag"], "title": "Mittagspause auf der Matte", "text": "Platzhaltertext: kompakte Einheit für neue Energie am Mittag." },
-    { "time": "19:00", "details": ["Mit Lehrperson 3", "Montag bis Samstag"], "title": "Abendlicher Ausklang", "text": "Platzhaltertext: lange Dehnungen und Entspannung zum Tagesende." }
+    {
+      "time": "07:00",
+      "details": [
+        "Mit Mira Hofmann",
+        "60 Min. · Einsteiger"
+      ],
+      "title": "Hatha Yoga am Morgen",
+      "text": "Ein ruhiger Start in den Tag: Haltungen, die Sie wach machen, und ein Atem, der Sie trägt."
+    },
+    {
+      "time": "12:00",
+      "details": [
+        "Mit Hannah Vogel",
+        "60 Min. · Therapeutisch"
+      ],
+      "title": "Rücken & Atem in der Mittagspause",
+      "text": "Gezielte Übungen für Rücken und Schultern – nach dem Vormittag am Schreibtisch genau richtig."
+    },
+    {
+      "time": "20:00",
+      "details": [
+        "Mit Lena Brandt",
+        "75 Min. · Therapeutisch"
+      ],
+      "title": "Yin Yoga zum Ausklang",
+      "text": "Lange gehaltene Haltungen, tiefe Dehnung und Ruhe zum Tagesende."
+    }
   ]
 }

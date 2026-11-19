@@ -24,7 +24,7 @@ export default function Contact() {
               <div className="chero__social t-h6" data-banner>
                 {social.map((s) => <a key={s.label} className="link" href={s.href}>{s.label}</a>)}
               </div>
-              <p data-banner>Platzhaltertext: kurzer Hinweis, wie schnell Anfragen beantwortet werden und wofür das Formular gedacht ist.</p>
+              <p data-banner>Schreiben Sie uns für eine Probestunde, eine Einzelstunde oder ein Retreat. Wir melden uns mit einem Terminvorschlag.</p>
             </div>
           </div>
           <div className="chero__image"><Media {...IMG.oellampen} data-hero-img /></div>

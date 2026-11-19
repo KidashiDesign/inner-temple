@@ -15,6 +15,7 @@ const CLASS_IMGS = [IMG.morgenlicht, IMG.kurs, IMG.namaste, IMG.atem, IMG.retrea
 
 function ClassCard({ item, index }) {
   const ref = useRef(null)
+  const fallback = CLASS_IMGS[index % CLASS_IMGS.length]
   useGSAP(
     () => {
       const ac = new AbortController()
@@ -29,7 +30,7 @@ function ClassCard({ item, index }) {
   return (
     <article ref={ref} className="ccard">
       <div className="ccard__media">
-        <Media src={item.image || CLASS_IMGS[index % CLASS_IMGS.length].src} tone={index + 1} label="Kursbild" alt={item.image ? item.title : `${item.title}: ${CLASS_IMGS[index % CLASS_IMGS.length].alt}`} />
+        <Media src={item.image || fallback.src} ai={!item.image && fallback.ai} tone={index + 1} label="Kursbild" alt={item.image ? item.title : `${item.title}: ${fallback.alt}`} />
         <div className="ccard__overlay"><Button to="/kontakt">Platz anfragen</Button></div>
       </div>
       <div className="ccard__body">
@@ -49,14 +50,14 @@ export default function Classes() {
   return (
     <Page>
       <PageHero align="center" eyebrow="Kurse" title="Finden Sie die Stunde, die zu Ihnen" accent="passt">
-        <LogoMarquee items={site.partners} variant="glass" />
+        <LogoMarquee items={site.styles} variant="glass" />
       </PageHero>
 
       <section className="section">
         <div className="container">
           <div className="head-split">
             <SectionHeader eyebrow="Kursangebot" title="Yoga für jedes" accent="Niveau" />
-            <p data-blur>Platzhaltertext: kurzer Hinweis zu Kursgrößen, Dauer und Buchung.</p>
+            <p data-blur>Alle Kurse finden in kleinen Gruppen statt. Dauer und Stufe stehen an jedem Kurs, Plätze reservieren Sie über das Kontaktformular.</p>
           </div>
           <div className="tabs" role="tablist" aria-label="Niveau" data-blur>
             {tabs.map((t, i) => (

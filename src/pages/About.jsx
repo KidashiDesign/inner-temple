@@ -14,16 +14,36 @@ import Faq from '../components/Faq.jsx'
 import { Lotus, Plus } from '../components/Icons.jsx'
 import site from '../data/site.json'
 import instructors from '../data/instructors.json'
+import classes from '../data/classes.json'
 
-const steps = ['Ankommen', 'Üben', 'Vertiefen', 'Mitnehmen']
-const sessions = ['Einzelstunde', 'Gruppenkurs', 'Retreat']
-const SESSION_IMGS = [IMG.atem, IMG.kurs, IMG.berge]
-const expertise = ['Fundierte Ausbildung', 'Individuelle Anpassung', 'Ruhige Umgebung', 'Langfristige Begleitung']
-const timetable = [
-  { group: 'Morgens', rows: [['07:00 – 08:00', 'Hatha Yoga'], ['08:30 – 09:15', 'Sanfter Morgen'], ['09:30 – 10:45', 'Vinyasa Flow']] },
-  { group: 'Mittags', rows: [['12:00 – 13:00', 'Rücken & Atem'], ['12:30 – 13:15', 'Meditation']] },
-  { group: 'Abends', rows: [['18:00 – 19:15', 'Yoga Basics'], ['20:00 – 21:15', 'Yin Yoga']] },
+const steps = [
+  { title: 'Ankommen', text: 'Sie melden sich zu einer Probestunde an, wir klären kurz Ihre Wünsche und eventuelle Beschwerden. Mehr braucht es zum Start nicht.' },
+  { title: 'Üben', text: 'In kleinen Gruppen lernen Sie die Grundhaltungen und den Atem kennen. Die Lehrenden zeigen Varianten für jeden Körper.' },
+  { title: 'Vertiefen', text: 'Mit der Zeit kommen längere Sequenzen, Meditation und Atemübungen dazu – in Ihrem Tempo.' },
+  { title: 'Mitnehmen', text: 'Sie nehmen kleine Übungen mit in den Alltag, die sich auch zu Hause oder im Büro umsetzen lassen.' },
 ]
+const sessions = [
+  { title: 'Einzelstunde', text: 'Ganz auf Sie abgestimmt: Wir üben, was Ihr Körper und Ihr Alltag gerade brauchen.' },
+  { title: 'Gruppenkurs', text: 'Gemeinsam in kleinen Gruppen üben, mit festen Terminen und klarer Anleitung.' },
+  { title: 'Retreat', text: 'Ein Wochenende nur für Sie: Yoga, Meditation und Zeit zum Ankommen.' },
+]
+const SESSION_IMGS = [IMG.atem, IMG.kurs, IMG.berge]
+const expertise = [
+  { title: 'Fundierte Ausbildung', text: 'Unsere Lehrenden haben mehrjährige Ausbildungen durchlaufen und bilden sich laufend weiter.' },
+  { title: 'Individuelle Anpassung', text: 'Jede Haltung lässt sich verändern. Wir zeigen Ihnen Varianten, die zu Ihrem Körper passen.' },
+  { title: 'Ruhige Umgebung', text: 'Gedämpftes Licht und wenig Ablenkung schaffen Raum zum Abschalten.' },
+  { title: 'Langfristige Begleitung', text: 'Wir begleiten Sie über Wochen und Monate und passen die Praxis an, wenn sich Ihr Alltag ändert.' },
+]
+
+// Kurszeiten kommen aus classes.json, damit sie mit der Kursseite übereinstimmen.
+const DAYPARTS = [['Morgens', (h) => h < 11], ['Mittags', (h) => h >= 11 && h < 15], ['Abends', (h) => h >= 15]]
+const timetable = DAYPARTS.map(([group, test]) => ({
+  group,
+  rows: classes.items
+    .filter((c) => test(parseInt(c.time, 10)))
+    .sort((a, b) => a.time.localeCompare(b.time))
+    .map((c) => [`${c.time} · ${c.tags[1]}`, c.title]),
+}))
 
 function useAboutAnimations(scope) {
   useGSAP(
@@ -71,7 +91,7 @@ export default function About() {
   return (
     <div ref={ref}>
       <Page>
-        <PageHero image={IMG.hero} eyebrow="Über uns" title="Ein Ort mit" accent="Haltung" text={`Platzhaltertext: ein bis zwei Sätze zur Geschichte und zum Selbstverständnis von ${site.name}.`} />
+        <PageHero image={IMG.hero} eyebrow="Über uns" title="Ein Ort mit" accent="Haltung" text={`${site.name} ist ein Ort zum Üben und Ankommen. Wir verbinden klassische Yoga-Praxis mit Atemarbeit und Meditation – ohne Leistungsdruck und mit viel Zeit für jeden Einzelnen.`} />
 
         <section className="section bg-alt">
           <div className="container split">
@@ -83,17 +103,17 @@ export default function About() {
               <div className="stack">
                 <div className="eyebrow" data-blur>Ablauf</div>
                 <h2 data-blur>In vier Schritten zur eigenen <span className="accent">Praxis</span></h2>
-                <p data-blur>Platzhaltertext: zwei bis drei Sätze dazu, wie neue Gäste bei uns starten.</p>
+                <p data-blur>Der Einstieg ist einfach: Sie kommen, wir hören zu, und Sie üben in Ihrem Tempo. So läuft es in vier Schritten.</p>
                 <div data-blur><Button to="/kurse">Kurse ansehen</Button></div>
               </div>
               <div className="steps">
-                {steps.map((s) => (
-                  <div className="steps__item" data-blur key={s}>
+                {steps.map(({ title, text }) => (
+                  <div className="steps__item" data-blur key={title}>
                     <button type="button" className="steps__q">
-                      <span className="t-h5">{s}</span>
+                      <span className="t-h5">{title}</span>
                       <span className="steps__icon"><Plus /></span>
                     </button>
-                    <div className="steps__answer"><p>Platzhaltertext: Beschreibung dieses Schritts in zwei Sätzen.</p></div>
+                    <div className="steps__answer"><p>{text}</p></div>
                   </div>
                 ))}
               </div>
@@ -105,10 +125,10 @@ export default function About() {
           <div className="container">
             <SectionHeader eyebrow="Formate" title="Drei Wege, mit uns zu" accent="üben" />
             <div className="grid-3" data-card-group>
-              {sessions.map((s, i) => (
-                <article className="scard" data-card key={s}>
+              {sessions.map(({ title, text }, i) => (
+                <article className="scard" data-card key={title}>
                   <div className="scard__media" data-image><Media {...SESSION_IMGS[i % 3]} data-zoom /></div>
-                  <div className="scard__body"><div className="t-h5">{s}</div><p>Platzhaltertext: kurze Beschreibung dieses Formats.</p></div>
+                  <div className="scard__body"><div className="t-h5">{title}</div><p>{text}</p></div>
                 </article>
               ))}
             </div>
@@ -119,10 +139,10 @@ export default function About() {
           <div className="container">
             <SectionHeader align="center" eyebrow="Was uns ausmacht" title="Erfahrung, die man" accent="spürt" />
             <div className="expert">
-              {expertise.map((e) => (
-                <div className="expert__row" data-blur key={e}>
+              {expertise.map(({ title, text }) => (
+                <div className="expert__row" data-blur key={title}>
                   <span className="expert__icon"><Lotus /></span>
-                  <div><div className="t-h4">{e}</div><p>Platzhaltertext: zwei Sätze, die diesen Punkt konkret machen.</p></div>
+                  <div><div className="t-h4">{title}</div><p>{text}</p></div>
                 </div>
               ))}
             </div>
@@ -134,16 +154,16 @@ export default function About() {
             <div className="band__bg"><Media {...IMG.schrein} /><div className="band__shade" /></div>
             <div className="container band__content">
               <span className="band__icon"><Lotus /></span>
-              <h2 data-blur>Platzhalter: ein Leitsatz über das <span className="accent">Retreat</span></h2>
+              <h2 data-blur>Ein Ort, an dem <span className="accent">Ruhe</span> selbstverständlich ist</h2>
             </div>
-            <LogoMarquee items={site.partners} variant="glass" />
+            <LogoMarquee items={site.styles} variant="glass" />
           </div>
         </section>
 
         <section className="section section--top">
           <div className="container split">
             <div className="split__body">
-              <SectionHeader eyebrow="Kurszeiten" title="Die Woche im" accent="Überblick" />
+              <SectionHeader eyebrow="Stundenplan" title="Kurszeiten im" accent="Überblick" />
               <div className="ttable">
                 <div className="ttable__group ttable__group--head" data-blur>
                   <div className="t-h6">Tageszeit</div>
@@ -162,7 +182,7 @@ export default function About() {
             </div>
             <div className="split__media" data-image>
               <Media {...IMG.namaste} data-zoom />
-              <div className="statcard"><div className="counter__value" data-counter="30+">30+</div><div className="t-h6">Platzhalter: Kurse pro Woche</div></div>
+              <div className="statcard"><div className="counter__value" data-counter={String(classes.items.length)}>{classes.items.length}</div><div className="t-h6">Kurse im Programm</div></div>
             </div>
           </div>
         </section>

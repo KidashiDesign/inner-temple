@@ -35,7 +35,7 @@ export default function Faq({ tinted = false }) {
       <div className="container faq">
         <div className="stack faq__head">
           <h2 data-blur>Häufige <span className="accent">Fragen</span></h2>
-          <p data-blur>Platzhaltertext: kurze Einleitung zu den wichtigsten Fragen rund um Kurse und Buchung.</p>
+          <p data-blur>Hier finden Sie Antworten auf die Fragen, die uns vor dem ersten Kurs am häufigsten gestellt werden.</p>
         </div>
         <div className="faq__list">
           {faq.map((item, i) => <FaqItem key={item.question} item={item} number={i + 1} />)}
