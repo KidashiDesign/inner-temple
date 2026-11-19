@@ -1,4 +1,4 @@
-# Shivas Yoga Retreat – Demo-Website
+# Inner Temple Yoga Retreat – Demo-Website
 
 Vite, React, React Router, GSAP (ScrollTrigger) und Lenis.
 

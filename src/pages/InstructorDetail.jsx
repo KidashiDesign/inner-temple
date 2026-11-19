@@ -17,7 +17,7 @@ export default function InstructorDetail() {
   const index = instructors.findIndex((p) => p.slug === slug)
   const p = index < 0 ? null : { ...defaults, ...instructors[index] }
   useDocumentMeta({
-    title: p ? `${p.name} – ${p.designation} | Shivas Yoga Retreat` : undefined,
+    title: p ? `${p.name} – ${p.designation} | Inner Temple Yoga Retreat` : undefined,
     description: p?.metaDescription,
     image: p?.image,
   })
