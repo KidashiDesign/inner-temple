@@ -6,6 +6,7 @@ import { Lotus } from '../components/Icons.jsx'
 import NotFound from './NotFound.jsx'
 import instructors from '../data/instructors.json'
 import defaults from '../data/instructorDefaults.json'
+import { useDocumentMeta } from '../hooks/useDocumentMeta.js'
 
 const Row = ({ label, children }) => (
   <div className="meta__row" data-banner><div className="t-h6">{label} :</div><div>{children}</div></div>
@@ -14,8 +15,13 @@ const Row = ({ label, children }) => (
 export default function InstructorDetail() {
   const { slug } = useParams()
   const index = instructors.findIndex((p) => p.slug === slug)
-  if (index < 0) return <NotFound />
-  const p = { ...defaults, ...instructors[index] }
+  const p = index < 0 ? null : { ...defaults, ...instructors[index] }
+  useDocumentMeta({
+    title: p ? `${p.name} – ${p.designation} | Shivas Yoga Retreat` : undefined,
+    description: p?.metaDescription,
+    image: p?.image,
+  })
+  if (!p) return <NotFound />
 
   return (
     <Page>
@@ -23,7 +29,7 @@ export default function InstructorDetail() {
         <div className="container">
           <h1 className="t-big" data-banner>{p.name}</h1>
           <div className="idetail__hero">
-            <div className="idetail__photo" data-image><Media src={p.image} tone={index + 1} data-hero-img label="Porträt" alt={p.name} /></div>
+            <div className="idetail__photo" data-image><Media src={p.image} tone={index + 1} data-hero-img label="Porträt" alt={p.imageAlt || p.name} loading="eager" fetchPriority="high" width="900" height="1125" /></div>
             <div className="idetail__quote" data-banner>
               <Lotus className="idetail__mark" />
               <div><p className="t-h3">{p.quote}</p><div className="t-h6 idetail__role">{p.role}</div></div>

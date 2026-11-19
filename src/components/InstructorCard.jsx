@@ -26,7 +26,7 @@ export default function InstructorCard({ person, index = 0, withLine = false, cl
   return (
     <article ref={ref} className={`icard ${className}`} {...rest}>
       <Link to={`/team/${person.slug}`} className="icard__media" aria-label={`${person.name} – Profil`}>
-        <Media src={person.image} tone={index + 1} label="Porträt" alt={person.name} />
+        <Media src={person.image} tone={index + 1} label="Porträt" alt={person.imageAlt || person.name} width="900" height="1125" />
         <span className="icard__overlay" />
         <span className="icard__frame" />
       </Link>
