@@ -2,14 +2,16 @@ import { useEffect, useRef, useState } from 'react'
 import { Link, NavLink, useLocation } from 'react-router-dom'
 import { gsap, useGSAP, MQ } from '../lib/gsap.js'
 import Button from './Button.jsx'
+import LanguageSwitch from './LanguageSwitch.jsx'
 import { Lotus } from './Icons.jsx'
-import site from '../data/site.json'
+import { fmt, useI18n } from '../i18n/I18nProvider.jsx'
 
 export default function Navbar() {
   const ref = useRef(null)
   const menuTl = useRef(null)
   const [open, setOpen] = useState(false)
   const { pathname } = useLocation()
+  const { ui, site, path } = useI18n()
 
   useEffect(() => setOpen(false), [pathname])
 
@@ -52,26 +54,27 @@ export default function Navbar() {
       <div className="nav__bg" />
       <div className="container nav__container">
         <div className="nav__bar">
-          <Link to="/" className="nav__brand" aria-label={`${site.name} – Startseite`}>
+          <Link to={path('home')} className="nav__brand" aria-label={fmt(ui.a11y.home, { name: site.name })}>
             <Lotus className="nav__brand-mark" />
             <span>{site.name}</span>
           </Link>
-          <nav className="nav__menu" id="hauptmenue" aria-label="Hauptnavigation">
+          <nav className="nav__menu" id="hauptmenue" aria-label={ui.a11y.mainNav}>
             <ul className="nav__links">
               {site.nav.map((item) => (
-                <li key={item.to}>
-                  <NavLink to={item.to} end={item.to === '/'} className="nav__link">{item.label}</NavLink>
+                <li key={item.route}>
+                  <NavLink to={path(item.route)} end={item.route === 'home'} className="nav__link">{item.label}</NavLink>
                 </li>
               ))}
             </ul>
             <div className="nav__mobile-extra">
               <a href={`tel:${site.contact.phone.replace(/\s/g, '')}`}>{site.contact.phone}</a>
               <a href={`mailto:${site.contact.email}`}>{site.contact.email}</a>
-              <Button to={site.cta.to}>{site.cta.label}</Button>
+              <Button to={path(site.cta.route)}>{site.cta.label}</Button>
+              <LanguageSwitch />
             </div>
           </nav>
-          <div className="nav__cta"><Button to={site.cta.to}>{site.cta.label}</Button></div>
-          <button type="button" className="nav__burger" aria-label="Menü" aria-expanded={open} aria-controls="hauptmenue" onClick={() => setOpen((v) => !v)}>
+          <div className="nav__cta"><LanguageSwitch /><Button to={path(site.cta.route)}>{site.cta.label}</Button></div>
+          <button type="button" className="nav__burger" aria-label={ui.a11y.menu} aria-expanded={open} aria-controls="hauptmenue" onClick={() => setOpen((v) => !v)}>
             <span /><span /><span />
           </button>
         </div>

@@ -2,30 +2,15 @@
   "name": "Inner Temple Yoga Retreat",
   "tagline": "Yoga, Atem und Stille – an einem Ort.",
   "nav": [
-    {
-      "label": "Start",
-      "to": "/"
-    },
-    {
-      "label": "Über uns",
-      "to": "/ueber-uns"
-    },
-    {
-      "label": "Kurse",
-      "to": "/kurse"
-    },
-    {
-      "label": "Team",
-      "to": "/team"
-    },
-    {
-      "label": "Kontakt",
-      "to": "/kontakt"
-    }
+    { "label": "Start", "route": "home" },
+    { "label": "Über uns", "route": "about" },
+    { "label": "Kurse", "route": "classes" },
+    { "label": "Team", "route": "team" },
+    { "label": "Kontakt", "route": "contact" }
   ],
   "cta": {
     "label": "Probestunde buchen",
-    "to": "/kontakt"
+    "route": "contact"
   },
   "contact": {
     "address": [
@@ -40,18 +25,9 @@
     ]
   },
   "social": [
-    {
-      "label": "Instagram",
-      "href": "#"
-    },
-    {
-      "label": "Facebook",
-      "href": "#"
-    },
-    {
-      "label": "YouTube",
-      "href": "#"
-    }
+    { "label": "Instagram", "href": "#" },
+    { "label": "Facebook", "href": "#" },
+    { "label": "YouTube", "href": "#" }
   ],
   "styles": [
     "Hatha Yoga",

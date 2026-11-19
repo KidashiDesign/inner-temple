@@ -9,12 +9,13 @@ import { IMG } from '../data/images.js'
 import Badge from '../components/Badge.jsx'
 import SectionHeader from '../components/SectionHeader.jsx'
 import LogoMarquee from '../components/LogoMarquee.jsx'
-import site from '../data/site.json'
-import classes from '../data/classes.json'
+import { useDocumentMeta } from '../hooks/useDocumentMeta.js'
+import { pickAlt, useI18n } from '../i18n/I18nProvider.jsx'
 const CLASS_IMGS = [IMG.morgenlicht, IMG.kurs, IMG.namaste, IMG.atem, IMG.retreatGruppe, IMG.berge, IMG.oellampen, IMG.gong, IMG.tempelInnen]
 
 function ClassCard({ item, index }) {
   const ref = useRef(null)
+  const { lang, ui, path } = useI18n()
   const fallback = CLASS_IMGS[index % CLASS_IMGS.length]
   useGSAP(
     () => {
@@ -30,8 +31,8 @@ function ClassCard({ item, index }) {
   return (
     <article ref={ref} className="ccard">
       <div className="ccard__media">
-        <Media src={item.image || fallback.src} ai={!item.image && fallback.ai} tone={index + 1} label="Kursbild" alt={item.image ? item.title : `${item.title}: ${fallback.alt}`} />
-        <div className="ccard__overlay"><Button to="/kontakt">Platz anfragen</Button></div>
+        <Media src={item.image || fallback.src} ai={!item.image && fallback.ai} tone={index + 1} label={ui.labels.classImage} alt={item.image ? item.title : `${item.title}: ${pickAlt(fallback.alt, lang)}`} />
+        <div className="ccard__overlay"><Button to={path('contact')}>{ui.common.requestSpot}</Button></div>
       </div>
       <div className="ccard__body">
         <div className="ccard__title"><span className="t-h5">{item.title}</span><span className="t-h5 accent">{item.time}</span></div>
@@ -43,26 +44,30 @@ function ClassCard({ item, index }) {
 }
 
 export default function Classes() {
-  const tabs = ['Alle', ...classes.levels]
-  const [tab, setTab] = useState('Alle')
-  const items = tab === 'Alle' ? classes.items : classes.items.filter((c) => c.level === tab)
+  const { ui, site, classes } = useI18n()
+  const t = ui.classes
+  useDocumentMeta({ title: ui.meta.titles.classes, description: ui.meta.description })
+  // `null` steht für „alle Stufen“, sonst der Name der Stufe aus classes.levels.
+  const tabs = [{ key: null, label: t.all }, ...classes.levels.map((level) => ({ key: level, label: level }))]
+  const [tab, setTab] = useState(null)
+  const items = tab === null ? classes.items : classes.items.filter((c) => c.level === tab)
 
   return (
     <Page>
-      <PageHero align="center" eyebrow="Kurse" title="Finden Sie die Stunde, die zu Ihnen" accent="passt">
+      <PageHero align="center" eyebrow={t.hero.eyebrow} title={t.hero.title} accent={t.hero.accent}>
         <LogoMarquee items={site.styles} variant="glass" />
       </PageHero>
 
       <section className="section">
         <div className="container">
           <div className="head-split">
-            <SectionHeader eyebrow="Kursangebot" title="Yoga für jedes" accent="Niveau" />
-            <p data-blur>Alle Kurse finden in kleinen Gruppen statt. Dauer und Stufe stehen an jedem Kurs, Plätze reservieren Sie über das Kontaktformular.</p>
+            <SectionHeader {...t.header} />
+            <p data-blur>{t.text}</p>
           </div>
-          <div className="tabs" role="tablist" aria-label="Niveau" data-blur>
-            {tabs.map((t, i) => (
-              <span className="tabs__item" key={t}>
-                <button type="button" role="tab" aria-selected={tab === t} className={`tabs__btn${tab === t ? ' is-active' : ''}`} onClick={() => setTab(t)}>{t}</button>
+          <div className="tabs" role="tablist" aria-label={ui.a11y.level} data-blur>
+            {tabs.map(({ key, label }, i) => (
+              <span className="tabs__item" key={label}>
+                <button type="button" role="tab" aria-selected={tab === key} className={`tabs__btn${tab === key ? ' is-active' : ''}`} onClick={() => setTab(key)}>{label}</button>
                 {i < tabs.length - 1 && <span className="tabs__sep" aria-hidden="true">//</span>}
               </span>
             ))}

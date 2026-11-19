@@ -7,17 +7,24 @@ import Instructors from './pages/Instructors.jsx'
 import InstructorDetail from './pages/InstructorDetail.jsx'
 import Contact from './pages/Contact.jsx'
 import NotFound from './pages/NotFound.jsx'
+import { I18nProvider } from './i18n/I18nProvider.jsx'
+import { LANGS, ROUTES } from './i18n/routes.js'
 
+const PAGES = {
+  home: <Home />,
+  about: <About />,
+  classes: <Classes />,
+  team: <Instructors />,
+  teamDetail: <InstructorDetail />,
+  contact: <Contact />,
+}
+
+// Jede Seite gibt es in jeder Sprache; die Pfade stehen in i18n/routes.js.
 export const router = createBrowserRouter([
   {
-    element: <RootLayout />,
+    element: <I18nProvider><RootLayout /></I18nProvider>,
     children: [
-      { path: '/', element: <Home /> },
-      { path: '/ueber-uns', element: <About /> },
-      { path: '/kurse', element: <Classes /> },
-      { path: '/team', element: <Instructors /> },
-      { path: '/team/:slug', element: <InstructorDetail /> },
-      { path: '/kontakt', element: <Contact /> },
+      ...LANGS.flatMap((lang) => Object.entries(PAGES).map(([key, element]) => ({ path: ROUTES[key][lang], element }))),
       { path: '*', element: <NotFound /> },
     ],
   },

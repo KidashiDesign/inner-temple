@@ -1,0 +1,314 @@
+[
+  {
+    "slug": "instructor-1",
+    "name": "Mira Hofmann",
+    "role": "Hatha & Meditation",
+    "image": "/images/yogalehrerin-mira-hofmann-portrait.webp",
+    "imageAlt": "Portrait of Mira Hofmann, yoga teacher for Hatha Yoga and meditation, in a white blouse",
+    "metaDescription": "Mira Hofmann – yoga teacher at Inner Temple Yoga Retreat. Focus: Hatha Yoga, meditation. Calm, precise guidance for beginners and those returning to yoga.",
+    "featured": true,
+    "designation": "Yoga teacher",
+    "quote": "If you practice slowly, you get further than you think. I want you to leave class calmer than you arrived.",
+    "shortBio": "Mira teaches Hatha Yoga and leads the meditation classes. She values clear guidance, precise alignment and an atmosphere in which nobody has anything to prove.",
+    "specialty": "Hatha Yoga, meditation",
+    "certifications": "Multi-year yoga teacher training, further training in meditation instruction",
+    "workingDays": "Monday to Friday",
+    "bioSummary": "Calm, precise guidance for beginners and those returning to yoga.",
+    "experience": "Many years of teaching experience",
+    "teachingStyle": "Slow, precise, with plenty of room for the breath",
+    "email": "mira@example.com",
+    "philosophy": [
+      {
+        "title": "Mindfulness",
+        "text": "Every pose begins with feeling: Where am I right now, and what does my body need?"
+      },
+      {
+        "title": "Breath",
+        "text": "The breath sets the pace – not ambition."
+      },
+      {
+        "title": "Alignment",
+        "text": "Clean basic poses protect the joints and make the practice sustainable."
+      }
+    ],
+    "benefits": [
+      "More calm in everyday life",
+      "A more upright, relaxed posture",
+      "Better sleep through evening routines",
+      "A safe introduction to meditation"
+    ]
+  },
+  {
+    "slug": "instructor-2",
+    "name": "Jonas Keller",
+    "role": "Vinyasa Flow",
+    "image": "/images/yogalehrer-jonas-keller-portrait.webp",
+    "imageAlt": "Portrait of Jonas Keller, yoga teacher for Vinyasa Flow, in a grey T-shirt",
+    "metaDescription": "Jonas Keller – yoga teacher at Inner Temple Yoga Retreat. Focus: Vinyasa Flow, Power Flow. Flowing classes for strength, flexibility and stamina.",
+    "featured": true,
+    "designation": "Yoga teacher",
+    "quote": "Movement and breath belong together. When both are flowing, the mind quiets down on its own.",
+    "shortBio": "Jonas teaches Vinyasa Flow and Power Flow. His classes are dynamic but never hectic: every sequence is explained before it is put together.",
+    "specialty": "Vinyasa Flow, Power Flow",
+    "certifications": "Yoga teacher training, further training in sequencing",
+    "workingDays": "Tuesday to Saturday",
+    "bioSummary": "Flowing classes for strength, flexibility and stamina.",
+    "experience": "Many years of teaching experience",
+    "teachingStyle": "Rhythmic, clearly structured, with humor",
+    "email": "jonas@example.com",
+    "philosophy": [
+      {
+        "title": "Flow",
+        "text": "Transitions are just as important as the poses themselves."
+      },
+      {
+        "title": "Strength",
+        "text": "Stability comes from the core and can be built up step by step."
+      },
+      {
+        "title": "Joy",
+        "text": "If you enjoy moving, you stick with it."
+      }
+    ],
+    "benefits": [
+      "More strength and flexibility",
+      "Better body awareness",
+      "Stamina for everyday life and sport",
+      "A clear head after class"
+    ]
+  },
+  {
+    "slug": "instructor-3",
+    "name": "Lena Brandt",
+    "role": "Yin Yoga",
+    "image": "/images/yogalehrerin-lena-brandt-portrait.webp",
+    "imageAlt": "Portrait of Lena Brandt, yoga teacher for Yin Yoga and Restorative, with long hair",
+    "metaDescription": "Lena Brandt – yoga teacher at Inner Temple Yoga Retreat. Focus: Yin Yoga, Restorative. Deep relaxation through long-held poses.",
+    "featured": true,
+    "designation": "Yoga teacher",
+    "quote": "Sometimes the bravest thing is simply to stay lying down and breathe.",
+    "shortBio": "Lena teaches Yin Yoga and Restorative. In long, held poses she gives you time to let go of tension and come to rest.",
+    "specialty": "Yin Yoga, Restorative",
+    "certifications": "Yoga teacher training, further training in Yin Yoga",
+    "workingDays": "Monday, Wednesday, Friday",
+    "bioSummary": "Deep relaxation through long-held poses.",
+    "experience": "Many years of teaching experience",
+    "teachingStyle": "Quiet, patient, with clear support",
+    "email": "lena@example.com",
+    "philosophy": [
+      {
+        "title": "Letting go",
+        "text": "Not doing, but allowing: that is the real practice."
+      },
+      {
+        "title": "Time",
+        "text": "Long-held poses work on tissue and mind at the same time."
+      },
+      {
+        "title": "Support",
+        "text": "Blankets and bolsters make it easy to truly relax."
+      }
+    ],
+    "benefits": [
+      "Deep stretching without effort",
+      "Releasing tension in the evening",
+      "More composure in everyday life",
+      "Better sleep"
+    ]
+  },
+  {
+    "slug": "instructor-4",
+    "name": "Arjun Mehta",
+    "role": "Breathwork",
+    "image": "/images/yogalehrer-arjun-mehta-portrait.webp",
+    "imageAlt": "Portrait of Arjun Mehta, yoga teacher for breathwork and pranayama, smiling",
+    "metaDescription": "Arjun Mehta – yoga teacher at Inner Temple Yoga Retreat. Focus: pranayama, breathwork. Breathing techniques for composure and energy.",
+    "featured": true,
+    "designation": "Yoga teacher",
+    "quote": "Your breath is the one thing you always have with you. I will show you how to use it.",
+    "shortBio": "Arjun leads the breathwork classes and the meditation evenings. He teaches pranayama techniques in a way that carries over easily into everyday life.",
+    "specialty": "Pranayama, breathwork",
+    "certifications": "Yoga teacher training, further training in pranayama",
+    "workingDays": "Tuesday and Thursday",
+    "bioSummary": "Breathing techniques for composure and energy.",
+    "experience": "Many years of teaching experience",
+    "teachingStyle": "Calm, explanatory, practical",
+    "email": "arjun@example.com",
+    "philosophy": [
+      {
+        "title": "Observing",
+        "text": "First notice, then change – that applies to the breath as much as to everyday life."
+      },
+      {
+        "title": "Rhythm",
+        "text": "An even breath calms, a conscious breath wakes you up."
+      },
+      {
+        "title": "Everyday life",
+        "text": "Every technique has to be practicable in a few minutes."
+      }
+    ],
+    "benefits": [
+      "More composure in stressful moments",
+      "Short exercises for in between",
+      "More energy during the day",
+      "A calm introduction to meditation"
+    ]
+  },
+  {
+    "slug": "instructor-5",
+    "name": "Hannah Vogel",
+    "role": "Yoga therapy",
+    "image": "/images/yogalehrerin-hannah-vogel-portrait.webp",
+    "imageAlt": "Portrait of Hannah Vogel, yoga teacher with a focus on yoga therapy, laughing",
+    "metaDescription": "Hannah Vogel – yoga teacher at Inner Temple Yoga Retreat. Focus: yoga therapy, Back & Breath. Gentle, targeted exercises for tension.",
+    "featured": false,
+    "designation": "Yoga teacher with a therapeutic focus",
+    "quote": "A body that feels safe can let go. That is what we are here for.",
+    "shortBio": "Hannah combines yoga with targeted exercises for back, neck and shoulders. She adapts poses individually – including when you have complaints.",
+    "specialty": "Yoga therapy, Back & Breath",
+    "certifications": "Yoga teacher training, further training in therapeutic yoga",
+    "workingDays": "Monday to Wednesday",
+    "bioSummary": "Gentle, targeted exercises for tension.",
+    "experience": "Many years of teaching experience",
+    "teachingStyle": "Mindful, individual, with many variations",
+    "email": "hannah@example.com",
+    "philosophy": [
+      {
+        "title": "Safety",
+        "text": "Every exercise can be adapted so that it feels good."
+      },
+      {
+        "title": "Precision",
+        "text": "Small adjustments often make the biggest difference."
+      },
+      {
+        "title": "Patience",
+        "text": "The body needs time to learn something new."
+      }
+    ],
+    "benefits": [
+      "More flexibility in back and shoulders",
+      "Relaxation for neck and jaw",
+      "Exercises for the office and at home",
+      "A trusting sense of your body"
+    ]
+  },
+  {
+    "slug": "instructor-6",
+    "name": "Tobias Reuter",
+    "role": "Ashtanga",
+    "image": "/images/yogalehrer-tobias-reuter-portrait.webp",
+    "imageAlt": "Portrait of Tobias Reuter, yoga teacher for Ashtanga Yoga, in a white T-shirt",
+    "metaDescription": "Tobias Reuter – yoga teacher at Inner Temple Yoga Retreat. Focus: Ashtanga Yoga. Powerful, structured practice for experienced practitioners.",
+    "featured": false,
+    "designation": "Yoga teacher",
+    "quote": "A fixed order gives freedom: when the sequence is in place, there is room for the breath.",
+    "shortBio": "Tobias teaches Ashtanga Yoga early in the morning. He guides experienced practitioners step by step through the fixed series and explains every variation along the way.",
+    "specialty": "Ashtanga Yoga",
+    "certifications": "Yoga teacher training, Ashtanga further training",
+    "workingDays": "Monday to Friday, early morning",
+    "bioSummary": "Powerful, structured practice for experienced practitioners.",
+    "experience": "Many years of teaching experience",
+    "teachingStyle": "Disciplined, but friendly",
+    "email": "tobias@example.com",
+    "philosophy": [
+      {
+        "title": "Consistency",
+        "text": "Practicing a little every day gets you further than rare, long classes."
+      },
+      {
+        "title": "Structure",
+        "text": "The fixed series gives support and makes progress visible."
+      },
+      {
+        "title": "Breath",
+        "text": "Ujjayi breathing keeps body and mind in time."
+      }
+    ],
+    "benefits": [
+      "Strength and stamina",
+      "A fixed rhythm for the morning",
+      "More concentration",
+      "Progress you can feel"
+    ]
+  },
+  {
+    "slug": "instructor-7",
+    "name": "Sophie Lorenz",
+    "role": "Sound Bath",
+    "image": "/images/yogalehrerin-sophie-lorenz-portrait.webp",
+    "imageAlt": "Portrait of Sophie Lorenz, yoga teacher for sound baths and deep relaxation",
+    "metaDescription": "Sophie Lorenz – yoga teacher at Inner Temple Yoga Retreat. Focus: sound baths, deep relaxation. Relaxation with singing bowls and gong.",
+    "featured": false,
+    "designation": "Yoga teacher",
+    "quote": "Sound reaches us where words end.",
+    "shortBio": "Sophie creates sound baths and relaxation evenings. With singing bowls and gong she accompanies the final relaxation and invites you to tune in to how you feel.",
+    "specialty": "Sound baths, deep relaxation",
+    "certifications": "Yoga teacher training, further training in sound work",
+    "workingDays": "Friday and Saturday",
+    "bioSummary": "Relaxation with singing bowls and gong.",
+    "experience": "Many years of teaching experience",
+    "teachingStyle": "Gentle, atmospheric, unhurried",
+    "email": "sophie@example.com",
+    "philosophy": [
+      {
+        "title": "Listening",
+        "text": "If you listen, you come to rest on your own."
+      },
+      {
+        "title": "Space",
+        "text": "Silence is not a lack of sound, but room to perceive."
+      },
+      {
+        "title": "Surrender",
+        "text": "Nothing has to, everything may."
+      }
+    ],
+    "benefits": [
+      "Deep relaxation",
+      "Switching off after a long day",
+      "More calm in the mind",
+      "A gentle end to the week"
+    ]
+  },
+  {
+    "slug": "instructor-8",
+    "name": "Elias Sommer",
+    "role": "Yoga for beginners",
+    "image": "/images/yogalehrer-elias-sommer-portrait.webp",
+    "imageAlt": "Portrait of Elias Sommer, yoga teacher for beginner classes and Yoga Basics, smiling",
+    "metaDescription": "Elias Sommer – yoga teacher at Inner Temple Yoga Retreat. Focus: Yoga Basics, beginner classes. An understandable start with no prior knowledge.",
+    "featured": false,
+    "designation": "Yoga teacher",
+    "quote": "Everyone starts somewhere. Here, starting is already the success.",
+    "shortBio": "Elias looks after the beginner classes and Yoga Basics. He explains the basic poses clearly and shows how to adapt them to your own body.",
+    "specialty": "Yoga Basics, beginner classes",
+    "certifications": "Yoga teacher training, further training for beginner groups",
+    "workingDays": "Monday, Wednesday, Saturday",
+    "bioSummary": "An understandable start with no prior knowledge.",
+    "experience": "Many years of teaching experience",
+    "teachingStyle": "Patient, clear, with plenty of explanation",
+    "email": "elias@example.com",
+    "philosophy": [
+      {
+        "title": "Simplicity",
+        "text": "Good practice does not need complicated poses."
+      },
+      {
+        "title": "Variation",
+        "text": "Every exercise has an easier and a more challenging version."
+      },
+      {
+        "title": "Curiosity",
+        "text": "Trying things out is allowed, comparing is not necessary."
+      }
+    ],
+    "benefits": [
+      "A safe start with no prior knowledge",
+      "Clear explanations",
+      "More flexibility, step by step",
+      "Joy in your own practice"
+    ]
+  }
+]

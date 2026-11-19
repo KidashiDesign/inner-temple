@@ -1,0 +1,41 @@
+{
+  "name": "Inner Temple Yoga Retreat",
+  "tagline": "Yoga, breath and stillness – in one place.",
+  "nav": [
+    { "label": "Home", "route": "home" },
+    { "label": "About", "route": "about" },
+    { "label": "Classes", "route": "classes" },
+    { "label": "Team", "route": "team" },
+    { "label": "Contact", "route": "contact" }
+  ],
+  "cta": {
+    "label": "Book a trial class",
+    "route": "contact"
+  },
+  "contact": {
+    "address": [
+      "Musterstraße 1",
+      "12345 Musterstadt"
+    ],
+    "phone": "+49 000 0000000",
+    "email": "hallo@example.com",
+    "hours": [
+      "Mon–Fri: 07:00–20:00",
+      "Sat–Sun: 08:00–14:00"
+    ]
+  },
+  "social": [
+    { "label": "Instagram", "href": "#" },
+    { "label": "Facebook", "href": "#" },
+    { "label": "YouTube", "href": "#" }
+  ],
+  "styles": [
+    "Hatha Yoga",
+    "Vinyasa Flow",
+    "Yin Yoga",
+    "Ashtanga",
+    "Meditation",
+    "Breathwork",
+    "Sound Bath"
+  ]
+}

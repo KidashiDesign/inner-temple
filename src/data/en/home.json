@@ -1,0 +1,84 @@
+{
+  "programs": [
+    {
+      "title": "Yoga classes",
+      "text": "Weekly classes for every level – from a gentle start to a powerful series."
+    },
+    {
+      "title": "Meditation",
+      "text": "Guided practice for calm, clarity and a lighter mind."
+    },
+    {
+      "title": "Breathwork",
+      "text": "Pranayama for more energy, composure and inner balance."
+    },
+    {
+      "title": "Retreats",
+      "text": "Multi-day getaways with a group, away from schedules and screens."
+    }
+  ],
+  "offerings": [
+    {
+      "title": "Private sessions",
+      "text": "Personal guidance tailored to your body, your pace and your goals."
+    },
+    {
+      "title": "Group classes",
+      "text": "Practice together in small groups – from your very first time to an advanced practice."
+    },
+    {
+      "title": "Weekend retreats",
+      "text": "Two days away from everyday life with yoga, meditation and time to arrive."
+    }
+  ],
+  "features": [
+    {
+      "title": "Experienced teachers",
+      "text": "Our team guides you with calm and care and adapts the exercises when your body needs something different."
+    },
+    {
+      "title": "Small groups",
+      "text": "Fewer participants mean more attention for every single pose."
+    },
+    {
+      "title": "Quiet spaces",
+      "text": "Soft light, few distractions and enough room to truly switch off."
+    }
+  ],
+  "practice": [
+    "Strengthen and stretch the body",
+    "Guide the breath with awareness",
+    "Bring the mind to rest",
+    "Change habits mindfully",
+    "Experience community"
+  ],
+  "schedule": [
+    {
+      "time": "07:00",
+      "details": [
+        "With Mira Hofmann",
+        "60 min · Beginner"
+      ],
+      "title": "Morning Hatha Yoga",
+      "text": "A calm start to the day: poses that wake you up and a breath that carries you."
+    },
+    {
+      "time": "12:00",
+      "details": [
+        "With Hannah Vogel",
+        "60 min · Therapeutic"
+      ],
+      "title": "Back & Breath at Lunchtime",
+      "text": "Targeted exercises for back and shoulders – just right after a morning at the desk."
+    },
+    {
+      "time": "20:00",
+      "details": [
+        "With Lena Brandt",
+        "75 min · Therapeutic"
+      ],
+      "title": "Yin Yoga to Wind Down",
+      "text": "Long-held poses, deep stretching and stillness at the end of the day."
+    }
+  ]
+}
