@@ -1,0 +1,108 @@
+{
+  "levels": [
+    "Beginner",
+    "Advanced",
+    "Therapeutic"
+  ],
+  "items": [
+    {
+      "title": "Hatha Yoga",
+      "time": "07:00",
+      "level": "Beginner",
+      "tags": [
+        "Beginner",
+        "60 min"
+      ],
+      "description": "A calm practice with a clear structure: you learn the basic poses and connect them with your breath.",
+      "image": null
+    },
+    {
+      "title": "Gentle Morning",
+      "time": "08:30",
+      "level": "Beginner",
+      "tags": [
+        "Beginner",
+        "45 min"
+      ],
+      "description": "A gentle start to the day with light movement, stretching and a short breathing exercise.",
+      "image": null
+    },
+    {
+      "title": "Yoga Basics",
+      "time": "18:00",
+      "level": "Beginner",
+      "tags": [
+        "Beginner",
+        "75 min"
+      ],
+      "description": "The fundamentals explained step by step – no prior knowledge needed and plenty of variations.",
+      "image": null
+    },
+    {
+      "title": "Vinyasa Flow",
+      "time": "09:00",
+      "level": "Advanced",
+      "tags": [
+        "Advanced",
+        "75 min"
+      ],
+      "description": "Flowing sequences in the rhythm of the breath that combine strength and flexibility.",
+      "image": null
+    },
+    {
+      "title": "Ashtanga",
+      "time": "06:30",
+      "level": "Advanced",
+      "tags": [
+        "Advanced",
+        "90 min"
+      ],
+      "description": "The fixed series for experienced practitioners: powerful, focused and early in the morning.",
+      "image": null
+    },
+    {
+      "title": "Power Flow",
+      "time": "19:30",
+      "level": "Advanced",
+      "tags": [
+        "Advanced",
+        "60 min"
+      ],
+      "description": "A dynamic class for strength and stamina that challenges you and leaves you clear-headed.",
+      "image": null
+    },
+    {
+      "title": "Yin Yoga",
+      "time": "20:00",
+      "level": "Therapeutic",
+      "tags": [
+        "Therapeutic",
+        "75 min"
+      ],
+      "description": "Long-held poses for deep stretching and relaxation, especially in the evening.",
+      "image": null
+    },
+    {
+      "title": "Back & Breath",
+      "time": "12:00",
+      "level": "Therapeutic",
+      "tags": [
+        "Therapeutic",
+        "60 min"
+      ],
+      "description": "Targeted exercises for back, neck and shoulders – ideal for your lunch break.",
+      "image": null
+    },
+    {
+      "title": "Restorative",
+      "time": "17:00",
+      "level": "Therapeutic",
+      "tags": [
+        "Therapeutic",
+        "60 min"
+      ],
+      "description": "Supported poses with blankets and bolsters in which the body is allowed to recover.",
+      "image": null
+    }
+  ]
+}

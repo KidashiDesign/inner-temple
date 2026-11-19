@@ -1,0 +1,205 @@
+{
+  "meta": {
+    "description": "Inner Temple Yoga Retreat – Demo-Website.",
+    "titles": {
+      "home": "Inner Temple Yoga Retreat",
+      "about": "Über uns | Inner Temple Yoga Retreat",
+      "classes": "Kurse | Inner Temple Yoga Retreat",
+      "team": "Team | Inner Temple Yoga Retreat",
+      "contact": "Kontakt | Inner Temple Yoga Retreat",
+      "notFound": "Seite nicht gefunden | Inner Temple Yoga Retreat"
+    },
+    "instructorTitle": "{name} – {designation} | {site}"
+  },
+  "a11y": {
+    "mainNav": "Hauptnavigation",
+    "menu": "Menü",
+    "home": "{name} – Startseite",
+    "profile": "{name} – Profil",
+    "scrollToTeam": "Zum Team scrollen",
+    "language": "Sprache",
+    "level": "Niveau",
+    "aiImage": "KI-generiertes Bild",
+    "placeholderImage": "Platzhalterbild"
+  },
+  "languages": { "de": "Deutsch", "en": "English" },
+  "labels": {
+    "heroImage": "Hero-Bild",
+    "classImage": "Kursbild",
+    "portrait": "Porträt"
+  },
+  "common": {
+    "requestSpot": "Platz anfragen",
+    "ourTeam": "Unser Team",
+    "teamTitle": "Menschen, die Sie",
+    "teamAccent": "begleiten",
+    "schedule": "Stundenplan",
+    "formats": "Formate"
+  },
+  "footer": {
+    "cta": "Bereit für die erste Stunde auf der Matte?",
+    "hours": "Öffnungszeiten",
+    "pages": "Seiten",
+    "follow": "Folgen Sie uns",
+    "demo": "Demo-Website mit Beispielinhalten"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Willkommen im Retreat",
+      "title": "Ankommen, atmen,",
+      "accent": "loslassen",
+      "text": "Bei {name} üben Sie in ruhiger Umgebung, in kleinen Gruppen und mit klarer Anleitung – ob Sie zum ersten Mal auf der Matte stehen oder schon lange praktizieren.",
+      "cardLabel": "Kurs am Morgen",
+      "tag": "Probestunde möglich"
+    },
+    "programs": { "eyebrow": "Unser Angebot", "title": "Wege zu mehr", "accent": "Balance" },
+    "vband": "Ein Blick ins Retreat",
+    "offerings": {
+      "eyebrow": "Formate",
+      "title": "Praxis, die zu Ihrem",
+      "accent": "Alltag",
+      "after": "passt",
+      "text": "Ob allein, in der Gruppe oder für ein ganzes Wochenende: Die drei Formate lassen sich frei kombinieren."
+    },
+    "quote": {
+      "before": "Yoga ist bei uns ",
+      "mark": "kein Programm",
+      "after": ", sondern eine Einladung, bei sich anzukommen."
+    },
+    "why": {
+      "badge": "Ruhe und Achtsamkeit",
+      "eyebrow": "Warum wir",
+      "title": "Ein Ort für echte",
+      "accent": "Erholung",
+      "text": "Bei uns zählt nicht, wie weit Sie sich beugen können, sondern wie Sie sich dabei fühlen. Ruhige Räume, klare Anleitung und viel Zeit zum Ankommen prägen jede Stunde.",
+      "button": "Mehr über uns"
+    },
+    "benefits": {
+      "title": "Raum für",
+      "accent": "Ruhe",
+      "lead": "Weniger Anspannung, mehr Klarheit: Regelmäßige Praxis tut Körper und Geist gut.",
+      "statLabel": "Im Programm",
+      "statText": "Kurse in {levels} Stufen",
+      "text": "Vom sanften Einstieg bis zur kraftvollen Serie – wählen Sie, was heute zu Ihnen passt.",
+      "side": "Persönliche Anleitung in jeder Stunde, auch für Einsteiger",
+      "pillOutline": "Achtsam",
+      "pillAccent": "Persönlich"
+    },
+    "styles": "Unsere Stile",
+    "practice": {
+      "eyebrow": "Unsere Praxis",
+      "title": "Was Yoga bei uns",
+      "accent": "bewirkt",
+      "button": "Termin anfragen"
+    },
+    "schedule": {
+      "eyebrow": "Stundenplan",
+      "title": "Ein Tag im",
+      "accent": "Retreat",
+      "button": "Zu den Kursen"
+    }
+  },
+  "about": {
+    "hero": {
+      "eyebrow": "Über uns",
+      "title": "Ein Ort mit",
+      "accent": "Haltung",
+      "text": "{name} ist ein Ort zum Üben und Ankommen. Wir verbinden klassische Yoga-Praxis mit Atemarbeit und Meditation – ohne Leistungsdruck und mit viel Zeit für jeden Einzelnen."
+    },
+    "way": {
+      "badge": "Unser Weg",
+      "eyebrow": "Ablauf",
+      "title": "In vier Schritten zur eigenen",
+      "accent": "Praxis",
+      "text": "Der Einstieg ist einfach: Sie kommen, wir hören zu, und Sie üben in Ihrem Tempo. So läuft es in vier Schritten.",
+      "button": "Kurse ansehen"
+    },
+    "steps": [
+      { "title": "Ankommen", "text": "Sie melden sich zu einer Probestunde an, wir klären kurz Ihre Wünsche und eventuelle Beschwerden. Mehr braucht es zum Start nicht." },
+      { "title": "Üben", "text": "In kleinen Gruppen lernen Sie die Grundhaltungen und den Atem kennen. Die Lehrenden zeigen Varianten für jeden Körper." },
+      { "title": "Vertiefen", "text": "Mit der Zeit kommen längere Sequenzen, Meditation und Atemübungen dazu – in Ihrem Tempo." },
+      { "title": "Mitnehmen", "text": "Sie nehmen kleine Übungen mit in den Alltag, die sich auch zu Hause oder im Büro umsetzen lassen." }
+    ],
+    "sessionsHeader": { "title": "Drei Wege, mit uns zu", "accent": "üben", "after": "" },
+    "sessions": [
+      { "title": "Einzelstunde", "text": "Ganz auf Sie abgestimmt: Wir üben, was Ihr Körper und Ihr Alltag gerade brauchen." },
+      { "title": "Gruppenkurs", "text": "Gemeinsam in kleinen Gruppen üben, mit festen Terminen und klarer Anleitung." },
+      { "title": "Retreat", "text": "Ein Wochenende nur für Sie: Yoga, Meditation und Zeit zum Ankommen." }
+    ],
+    "expertiseHeader": { "eyebrow": "Was uns ausmacht", "title": "Erfahrung, die man", "accent": "spürt" },
+    "expertise": [
+      { "title": "Fundierte Ausbildung", "text": "Unsere Lehrenden haben mehrjährige Ausbildungen durchlaufen und bilden sich laufend weiter." },
+      { "title": "Individuelle Anpassung", "text": "Jede Haltung lässt sich verändern. Wir zeigen Ihnen Varianten, die zu Ihrem Körper passen." },
+      { "title": "Ruhige Umgebung", "text": "Gedämpftes Licht und wenig Ablenkung schaffen Raum zum Abschalten." },
+      { "title": "Langfristige Begleitung", "text": "Wir begleiten Sie über Wochen und Monate und passen die Praxis an, wenn sich Ihr Alltag ändert." }
+    ],
+    "band": { "before": "Ein Ort, an dem", "accent": "Ruhe", "after": "selbstverständlich ist" },
+    "timetable": {
+      "title": "Kurszeiten im",
+      "accent": "Überblick",
+      "headDaypart": "Tageszeit",
+      "headTime": "Zeit",
+      "headClass": "Kurs",
+      "dayparts": { "morning": "Morgens", "midday": "Mittags", "evening": "Abends" },
+      "statLabel": "Kurse im Programm"
+    }
+  },
+  "classes": {
+    "hero": { "eyebrow": "Kurse", "title": "Finden Sie die Stunde, die zu Ihnen", "accent": "passt" },
+    "header": { "eyebrow": "Kursangebot", "title": "Yoga für jedes", "accent": "Niveau" },
+    "text": "Alle Kurse finden in kleinen Gruppen statt. Dauer und Stufe stehen an jedem Kurs, Plätze reservieren Sie über das Kontaktformular.",
+    "all": "Alle"
+  },
+  "instructors": {
+    "title": "Menschen, die Sie",
+    "accent": "begleiten",
+    "numbers": { "eyebrow": "In Zahlen", "title": "Erfahrung, auf die Sie", "accent": "bauen", "after": "können" },
+    "counters": [
+      "Lehrende im Team",
+      "Kurse im Programm",
+      "Stufen, vom ersten Mal bis therapeutisch",
+      "Wege: Yoga, Meditation, Atemarbeit und Retreats"
+    ]
+  },
+  "instructor": {
+    "labelSuffix": " :",
+    "focus": "Schwerpunkt",
+    "training": "Ausbildung",
+    "days": "Unterrichtstage",
+    "principles": "Grundsätze",
+    "takeaway": "Was Sie aus den Stunden mitnehmen",
+    "position": "Position",
+    "summary": "Kurzprofil",
+    "experience": "Erfahrung",
+    "style": "Unterrichtsstil",
+    "email": "E-Mail",
+    "direct": "Direkt anfragen",
+    "allTeam": "Zum ganzen Team"
+  },
+  "contact": {
+    "title": "Kontakt",
+    "visit": "Besuchen Sie uns",
+    "text": "Schreiben Sie uns für eine Probestunde, eine Einzelstunde oder ein Retreat. Wir melden uns mit einem Terminvorschlag."
+  },
+  "form": {
+    "done": "Danke! Dies ist eine Demo – die Nachricht wurde nicht versendet.",
+    "name": "Name",
+    "phone": "Telefon",
+    "email": "E-Mail",
+    "subjectLabel": "Thema",
+    "subjectPlaceholder": "Thema wählen",
+    "subjects": ["Probestunde", "Einzelstunde", "Retreat"],
+    "message": "Nachricht",
+    "consent": "Ich stimme der Verarbeitung meiner Angaben zu.",
+    "submit": "Nachricht senden"
+  },
+  "faq": {
+    "title": "Häufige",
+    "accent": "Fragen",
+    "text": "Hier finden Sie Antworten auf die Fragen, die uns vor dem ersten Kurs am häufigsten gestellt werden."
+  },
+  "notFound": {
+    "title": "Diese Seite gibt es nicht",
+    "button": "Zur Startseite"
+  }
+}

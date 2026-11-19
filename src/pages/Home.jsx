@@ -12,10 +12,8 @@ import BackgroundLines from '../components/BackgroundLines.jsx'
 import LogoMarquee from '../components/LogoMarquee.jsx'
 import InstructorCard from '../components/InstructorCard.jsx'
 import { Lotus, Star, Clock, User, Check, ArrowDown } from '../components/Icons.jsx'
-import site from '../data/site.json'
-import home from '../data/home.json'
-import classes from '../data/classes.json'
-import instructors from '../data/instructors.json'
+import { useDocumentMeta } from '../hooks/useDocumentMeta.js'
+import { fmt, useI18n } from '../i18n/I18nProvider.jsx'
 
 /** Section-specific motion of the home page. Shared reveals come from <Page>. */
 function useHomeAnimations(scope) {
@@ -128,8 +126,11 @@ const SCHED_WIDE = [IMG.morgenlicht, IMG.kurs, IMG.retreatGruppe]
 
 export default function Home() {
   const ref = useRef(null)
+  const { ui, site, home, classes, instructors, path } = useI18n()
+  const t = ui.home
   const morning = classes.items[0]
   useHomeAnimations(ref)
+  useDocumentMeta({ title: ui.meta.titles.home, description: ui.meta.description })
   const team = instructors.filter((p) => p.featured)
 
   return (
@@ -138,25 +139,25 @@ export default function Home() {
         {/* 1 Hero */}
         <section className="hero">
           <div className="hero__bg">
-            <Media {...IMG.hero} className="hero__img" data-hero-img label="Hero-Bild" />
+            <Media {...IMG.hero} className="hero__img" data-hero-img label={ui.labels.heroImage} />
             <div className="hero__shade" />
             <BackgroundLines />
           </div>
           <div className="container hero__content">
             <div className="stack hero__text">
-              <div className="eyebrow" data-banner>Willkommen im Retreat</div>
-              <h1 data-banner>Ankommen, atmen, <span className="accent">loslassen</span></h1>
-              <p data-banner>Bei {site.name} üben Sie in ruhiger Umgebung, in kleinen Gruppen und mit klarer Anleitung – ob Sie zum ersten Mal auf der Matte stehen oder schon lange praktizieren.</p>
+              <div className="eyebrow" data-banner>{t.hero.eyebrow}</div>
+              <h1 data-banner>{t.hero.title} <span className="accent">{t.hero.accent}</span></h1>
+              <p data-banner>{fmt(t.hero.text, { name: site.name })}</p>
             </div>
             <aside className="hero__card">
               <div className="hero__card-media"><Media {...IMG.tempelInnen} /></div>
               <div className="hero__card-body">
-                <div className="accent-text">Kurs am Morgen</div>
+                <div className="accent-text">{t.hero.cardLabel}</div>
                 <div className="t-h4">{morning.title}</div>
                 <ul className="hero__facts">
                   <li><Clock /> {morning.time}</li><li><User /> {morning.tags[0]}</li><li><Lotus /> {morning.tags[1]}</li>
                 </ul>
-                <span className="hero__tag">Probestunde möglich</span>
+                <span className="hero__tag">{t.hero.tag}</span>
               </div>
             </aside>
           </div>
@@ -166,7 +167,7 @@ export default function Home() {
           {/* 2 Programme */}
           <section className="section section--top">
             <div className="container">
-              <SectionHeader align="center" eyebrow="Unser Angebot" title="Wege zu mehr" accent="Balance" />
+              <SectionHeader align="center" {...t.programs} />
               <div className="prog-grid" data-card-group>
                 {home.programs.map((p) => (
                   <article className="prog" data-card key={p.title}>
@@ -183,7 +184,7 @@ export default function Home() {
           <section className="section section--top vband">
             <div className="vband__box">
               <Media {...IMG.berge} className="vband__media" />
-              <div className="vband__btn"><span className="eyebrow">Ein Blick ins Retreat</span></div>
+              <div className="vband__btn"><span className="eyebrow">{t.vband}</span></div>
             </div>
           </section>
 
@@ -191,8 +192,8 @@ export default function Home() {
           <section className="section">
             <div className="container">
               <div className="head-split">
-                <SectionHeader eyebrow="Formate" title="Praxis, die zu Ihrem" accent="Alltag" after="passt" />
-                <p data-blur>Ob allein, in der Gruppe oder für ein ganzes Wochenende: Die drei Formate lassen sich frei kombinieren.</p>
+                <SectionHeader eyebrow={t.offerings.eyebrow} title={t.offerings.title} accent={t.offerings.accent} after={t.offerings.after} />
+                <p data-blur>{t.offerings.text}</p>
               </div>
               <div className="offer-grid" data-flip-group>
                 {home.offerings.map((o, i) => (
@@ -205,7 +206,7 @@ export default function Home() {
               </div>
               <div className="quote">
                 <span className="quote__star"><Star /></span>
-                <p data-blur>Yoga ist bei uns <span className="quote__mark">kein Programm</span>, sondern eine Einladung, bei sich anzukommen.</p>
+                <p data-blur>{t.quote.before}<span className="quote__mark">{t.quote.mark}</span>{t.quote.after}</p>
               </div>
             </div>
           </section>
@@ -215,14 +216,14 @@ export default function Home() {
             <div className="container split">
               <div className="split__media" data-image>
                 <Media {...IMG.kurs} data-zoom />
-                <div className="split__badge"><Badge>Ruhe und Achtsamkeit</Badge></div>
+                <div className="split__badge"><Badge>{t.why.badge}</Badge></div>
               </div>
               <div className="split__body">
                 <div className="stack">
-                  <div className="eyebrow" data-blur>Warum wir</div>
-                  <h2 data-blur>Ein Ort für echte <span className="accent">Erholung</span></h2>
-                  <p data-blur>Bei uns zählt nicht, wie weit Sie sich beugen können, sondern wie Sie sich dabei fühlen. Ruhige Räume, klare Anleitung und viel Zeit zum Ankommen prägen jede Stunde.</p>
-                  <div data-blur><Button to="/ueber-uns">Mehr über uns</Button></div>
+                  <div className="eyebrow" data-blur>{t.why.eyebrow}</div>
+                  <h2 data-blur>{t.why.title} <span className="accent">{t.why.accent}</span></h2>
+                  <p data-blur>{t.why.text}</p>
+                  <div data-blur><Button to={path('about')}>{t.why.button}</Button></div>
                 </div>
                 <div className="features">
                   {home.features.map((f) => (
@@ -239,8 +240,8 @@ export default function Home() {
           {/* 6 Benefits */}
           <section className="benefits">
             <div className="benefits__head">
-              <div className="t-big" data-blur>Raum für <span className="accent">Ruhe</span></div>
-              <button type="button" className="benefits__scroll" onClick={() => scrollToTarget('#team')} aria-label="Zum Team scrollen"><ArrowDown /></button>
+              <div className="t-big" data-blur>{t.benefits.title} <span className="accent">{t.benefits.accent}</span></div>
+              <button type="button" className="benefits__scroll" onClick={() => scrollToTarget('#team')} aria-label={ui.a11y.scrollToTeam}><ArrowDown /></button>
             </div>
             <div className="benefits__bg"><Media {...IMG.schrein} /><div className="benefits__shade" /></div>
             <div className="container benefits__cards">
@@ -248,15 +249,15 @@ export default function Home() {
                 <div className="benefits__photo" data-rise><Media {...IMG.retreatGruppe} /></div>
                 <div className="benefits__card benefits__card--center" data-rise>
                   <span className="accent-text t-h3"><Lotus /></span>
-                  <div className="t-h4">Weniger Anspannung, mehr Klarheit: Regelmäßige Praxis tut Körper und Geist gut.</div>
-                  <div className="benefits__stat"><span>Im Programm</span><strong>{classes.items.length}</strong><span>Kurse in {classes.levels.length} Stufen</span></div>
-                  <p>Vom sanften Einstieg bis zur kraftvollen Serie – wählen Sie, was heute zu Ihnen passt.</p>
+                  <div className="t-h4">{t.benefits.lead}</div>
+                  <div className="benefits__stat"><span>{t.benefits.statLabel}</span><strong>{classes.items.length}</strong><span>{fmt(t.benefits.statText, { levels: classes.levels.length })}</span></div>
+                  <p>{t.benefits.text}</p>
                 </div>
                 <div className="benefits__col">
                   <div className="benefits__card" data-rise>
                     <span className="accent-text t-h3"><Star /></span>
-                    <div className="t-h5">Persönliche Anleitung in jeder Stunde, auch für Einsteiger</div>
-                    <div className="benefits__pills"><Badge variant="outline">Achtsam</Badge><Badge variant="accent">Persönlich</Badge></div>
+                    <div className="t-h5">{t.benefits.side}</div>
+                    <div className="benefits__pills"><Badge variant="outline">{t.benefits.pillOutline}</Badge><Badge variant="accent">{t.benefits.pillAccent}</Badge></div>
                   </div>
                   <div className="benefits__photo benefits__photo--small" data-rise><Media {...IMG.atem} /></div>
                 </div>
@@ -268,7 +269,7 @@ export default function Home() {
           <section className="partners">
             <div className="partners__label">
               <span className="partners__fill" />
-              <div className="partners__label-inner"><Star /><span className="t-h5">Unsere Stile</span></div>
+              <div className="partners__label-inner"><Star /><span className="t-h5">{t.styles}</span></div>
             </div>
             <LogoMarquee items={site.styles} />
           </section>
@@ -276,7 +277,7 @@ export default function Home() {
           {/* 8 Praxis */}
           <section className="section section--top">
             <div className="container">
-              <SectionHeader eyebrow="Unsere Praxis" title="Was Yoga bei uns" accent="bewirkt" />
+              <SectionHeader {...t.practice} />
               <div className="split practice">
                 <div className="split__media practice__photos">
                   {home.practice.map((p, i) => <Media key={p} {...PRACTICE_IMGS[i % PRACTICE_IMGS.length]} className="practice__photo" />)}
@@ -290,7 +291,7 @@ export default function Home() {
                       </div>
                     ))}
                   </div>
-                  <div data-blur><Button to="/kontakt">Termin anfragen</Button></div>
+                  <div data-blur><Button to={path('contact')}>{t.practice.button}</Button></div>
                 </div>
               </div>
             </div>
@@ -299,7 +300,7 @@ export default function Home() {
           {/* 9 Stundenplan */}
           <section className="section section--top">
             <div className="container">
-              <SectionHeader eyebrow="Stundenplan" title="Ein Tag im" accent="Retreat" />
+              <SectionHeader {...t.schedule} />
               <div className="sched-list">
                 {home.schedule.map((s, i) => (
                   <article className="sched" key={s.time}>
@@ -310,7 +311,7 @@ export default function Home() {
                     <div className="sched__body">
                       <h3 className="t-h5">{s.title}</h3>
                       <p>{s.text}</p>
-                      <div><Button to="/kurse">Zu den Kursen</Button></div>
+                      <div><Button to={path('classes')}>{t.schedule.button}</Button></div>
                     </div>
                     <div className={`sched__imgs${i % 2 ? ' sched__imgs--flip' : ''}`}>
                       <div className="sched__img sched__img--narrow"><Media {...SCHED_NARROW[i % 3]} /></div>
@@ -325,7 +326,7 @@ export default function Home() {
           {/* 10 Team */}
           <section className="section team" id="team">
             <div className="container">
-              <SectionHeader align="center" eyebrow="Unser Team" title="Menschen, die Sie" accent="begleiten" />
+              <SectionHeader align="center" eyebrow={ui.common.ourTeam} title={ui.common.teamTitle} accent={ui.common.teamAccent} />
               <div className="team-grid">
                 {team.map((p, i) => <InstructorCard key={p.slug} person={p} index={i} />)}
               </div>

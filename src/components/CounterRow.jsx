@@ -1,16 +1,11 @@
-import classes from '../data/classes.json'
-import instructors from '../data/instructors.json'
-import home from '../data/home.json'
-
-// Zahlen werden aus den Daten abgeleitet, damit sie immer stimmen.
-const items = [
-  { value: String(instructors.length), text: 'Lehrende im Team' },
-  { value: String(classes.items.length), text: 'Kurse im Programm' },
-  { value: String(classes.levels.length), text: 'Stufen, vom ersten Mal bis therapeutisch' },
-  { value: String(home.programs.length), text: 'Wege: Yoga, Meditation, Atemarbeit und Retreats' },
-]
+import { useI18n } from '../i18n/I18nProvider.jsx'
 
 export default function CounterRow() {
+  const { ui, classes, instructors, home } = useI18n()
+  // Zahlen werden aus den Daten abgeleitet, damit sie immer stimmen; die Texte stehen in ui.instructors.counters.
+  const values = [instructors.length, classes.items.length, classes.levels.length, home.programs.length]
+  const items = values.map((value, i) => ({ value: String(value), text: ui.instructors.counters[i] }))
+
   return (
     <div className="counters" data-card-group>
       {items.map((it) => (

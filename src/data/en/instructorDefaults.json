@@ -1,0 +1,35 @@
+{
+  "quote": "Yoga begins where you take your time.",
+  "bioTitle": "About",
+  "shortBio": "A member of our team who guides you through the class with calm and care.",
+  "specialty": "Yoga",
+  "certifications": "Yoga teacher training",
+  "workingDays": "According to the class schedule",
+  "designation": "Yoga teacher",
+  "bioSummary": "Calm, clear guidance.",
+  "experience": "Many years of teaching experience",
+  "teachingStyle": "Mindful and clear",
+  "email": "hallo@example.com",
+  "phone": "+49 000 0000000",
+  "philosophy": [
+    {
+      "title": "Mindfulness",
+      "text": "Notice before you change anything."
+    },
+    {
+      "title": "Breath",
+      "text": "The breath sets the pace."
+    },
+    {
+      "title": "Alignment",
+      "text": "Clean poses protect the body."
+    }
+  ],
+  "benefits": [
+    "More calm",
+    "More flexibility",
+    "More strength",
+    "More clarity"
+  ],
+  "closingText": "Would you like to try a class? Write to us and we will find the right one for you."
+}

@@ -1,0 +1,205 @@
+{
+  "meta": {
+    "description": "Inner Temple Yoga Retreat – demo website.",
+    "titles": {
+      "home": "Inner Temple Yoga Retreat",
+      "about": "About | Inner Temple Yoga Retreat",
+      "classes": "Classes | Inner Temple Yoga Retreat",
+      "team": "Team | Inner Temple Yoga Retreat",
+      "contact": "Contact | Inner Temple Yoga Retreat",
+      "notFound": "Page not found | Inner Temple Yoga Retreat"
+    },
+    "instructorTitle": "{name} – {designation} | {site}"
+  },
+  "a11y": {
+    "mainNav": "Main navigation",
+    "menu": "Menu",
+    "home": "{name} – Home",
+    "profile": "{name} – Profile",
+    "scrollToTeam": "Scroll to the team",
+    "language": "Language",
+    "level": "Level",
+    "aiImage": "AI-generated image",
+    "placeholderImage": "Placeholder image"
+  },
+  "languages": { "de": "Deutsch", "en": "English" },
+  "labels": {
+    "heroImage": "Hero image",
+    "classImage": "Class image",
+    "portrait": "Portrait"
+  },
+  "common": {
+    "requestSpot": "Request a spot",
+    "ourTeam": "Our team",
+    "teamTitle": "People who",
+    "teamAccent": "guide you",
+    "schedule": "Schedule",
+    "formats": "Formats"
+  },
+  "footer": {
+    "cta": "Ready for your first class on the mat?",
+    "hours": "Opening hours",
+    "pages": "Pages",
+    "follow": "Follow us",
+    "demo": "Demo website with sample content"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Welcome to the retreat",
+      "title": "Arrive, breathe,",
+      "accent": "let go",
+      "text": "At {name} you practice in a calm setting, in small groups and with clear guidance – whether you are stepping onto the mat for the first time or have practiced for years.",
+      "cardLabel": "Morning class",
+      "tag": "Trial class available"
+    },
+    "programs": { "eyebrow": "What we offer", "title": "Paths to more", "accent": "balance" },
+    "vband": "A glimpse of the retreat",
+    "offerings": {
+      "eyebrow": "Formats",
+      "title": "Practice that fits",
+      "accent": "your life",
+      "after": "",
+      "text": "Whether on your own, in a group or for a whole weekend: the three formats can be combined freely."
+    },
+    "quote": {
+      "before": "For us, yoga is ",
+      "mark": "not a program",
+      "after": ", but an invitation to arrive within yourself."
+    },
+    "why": {
+      "badge": "Calm and mindfulness",
+      "eyebrow": "Why us",
+      "title": "A place for true",
+      "accent": "rest",
+      "text": "Here it does not matter how far you can bend, but how you feel while doing it. Quiet rooms, clear guidance and plenty of time to arrive shape every class.",
+      "button": "More about us"
+    },
+    "benefits": {
+      "title": "Room for",
+      "accent": "calm",
+      "lead": "Less tension, more clarity: regular practice is good for body and mind.",
+      "statLabel": "In the program",
+      "statText": "classes across {levels} levels",
+      "text": "From a gentle start to a powerful series – choose what suits you today.",
+      "side": "Personal guidance in every class, including for beginners",
+      "pillOutline": "Mindful",
+      "pillAccent": "Personal"
+    },
+    "styles": "Our styles",
+    "practice": {
+      "eyebrow": "Our practice",
+      "title": "What yoga",
+      "accent": "does for you",
+      "button": "Request an appointment"
+    },
+    "schedule": {
+      "eyebrow": "Schedule",
+      "title": "A day at the",
+      "accent": "retreat",
+      "button": "View classes"
+    }
+  },
+  "about": {
+    "hero": {
+      "eyebrow": "About",
+      "title": "A place with",
+      "accent": "poise",
+      "text": "{name} is a place to practice and to arrive. We combine classical yoga practice with breathwork and meditation – without performance pressure and with plenty of time for each individual."
+    },
+    "way": {
+      "badge": "Our way",
+      "eyebrow": "How it works",
+      "title": "Four steps to your own",
+      "accent": "practice",
+      "text": "Getting started is simple: you come in, we listen, and you practice at your own pace. Here is how it works in four steps.",
+      "button": "View classes"
+    },
+    "steps": [
+      { "title": "Arrive", "text": "You sign up for a trial class, and we briefly clarify your wishes and any complaints. You need nothing more to get started." },
+      { "title": "Practice", "text": "In small groups you get to know the basic poses and the breath. The teachers show variations for every body." },
+      { "title": "Deepen", "text": "Over time, longer sequences, meditation and breathing exercises are added – at your own pace." },
+      { "title": "Take it with you", "text": "You take small exercises into everyday life that you can also do at home or in the office." }
+    ],
+    "sessionsHeader": { "title": "Three ways to", "accent": "practice", "after": "with us" },
+    "sessions": [
+      { "title": "Private session", "text": "Tailored entirely to you: we practice what your body and your daily life need right now." },
+      { "title": "Group class", "text": "Practice together in small groups, with fixed dates and clear guidance." },
+      { "title": "Retreat", "text": "A weekend just for you: yoga, meditation and time to arrive." }
+    ],
+    "expertiseHeader": { "eyebrow": "What sets us apart", "title": "Experience you can", "accent": "feel" },
+    "expertise": [
+      { "title": "Solid training", "text": "Our teachers have completed multi-year trainings and keep learning all the time." },
+      { "title": "Individual adaptation", "text": "Every pose can be modified. We show you variations that suit your body." },
+      { "title": "Quiet surroundings", "text": "Soft light and few distractions create room to switch off." },
+      { "title": "Long-term support", "text": "We accompany you over weeks and months and adapt the practice when your daily life changes." }
+    ],
+    "band": { "before": "A place where", "accent": "calm", "after": "comes naturally" },
+    "timetable": {
+      "title": "Class times at a",
+      "accent": "glance",
+      "headDaypart": "Time of day",
+      "headTime": "Time",
+      "headClass": "Class",
+      "dayparts": { "morning": "Morning", "midday": "Midday", "evening": "Evening" },
+      "statLabel": "Classes in the program"
+    }
+  },
+  "classes": {
+    "hero": { "eyebrow": "Classes", "title": "Find the class that", "accent": "fits you" },
+    "header": { "eyebrow": "Class offering", "title": "Yoga for every", "accent": "level" },
+    "text": "All classes take place in small groups. Duration and level are shown on each class, and you can reserve a spot via the contact form.",
+    "all": "All"
+  },
+  "instructors": {
+    "title": "People who",
+    "accent": "guide you",
+    "numbers": { "eyebrow": "By the numbers", "title": "Experience you can", "accent": "rely on", "after": "" },
+    "counters": [
+      "Teachers on the team",
+      "Classes in the program",
+      "Levels, from your first time to therapeutic",
+      "Paths: yoga, meditation, breathwork and retreats"
+    ]
+  },
+  "instructor": {
+    "labelSuffix": ":",
+    "focus": "Focus",
+    "training": "Training",
+    "days": "Teaching days",
+    "principles": "Principles",
+    "takeaway": "What you take away from the classes",
+    "position": "Position",
+    "summary": "Short profile",
+    "experience": "Experience",
+    "style": "Teaching style",
+    "email": "Email",
+    "direct": "Get in touch directly",
+    "allTeam": "View the whole team"
+  },
+  "contact": {
+    "title": "Contact",
+    "visit": "Visit us",
+    "text": "Write to us about a trial class, a private session or a retreat. We will get back to you with a suggested date."
+  },
+  "form": {
+    "done": "Thank you! This is a demo – the message was not sent.",
+    "name": "Name",
+    "phone": "Phone",
+    "email": "Email",
+    "subjectLabel": "Subject",
+    "subjectPlaceholder": "Choose a subject",
+    "subjects": ["Trial class", "Private session", "Retreat"],
+    "message": "Message",
+    "consent": "I agree to the processing of my data.",
+    "submit": "Send message"
+  },
+  "faq": {
+    "title": "Frequently asked",
+    "accent": "questions",
+    "text": "Here you will find answers to the questions we are asked most often before the first class."
+  },
+  "notFound": {
+    "title": "This page does not exist",
+    "button": "Go to the home page"
+  }
+}

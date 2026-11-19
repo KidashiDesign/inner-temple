@@ -12,6 +12,11 @@
 .nav__link:hover, .nav__link.active { color: var(--c-accent); }
 .nav__link:hover::after, .nav__link.active::after { width: 100%; }
 .nav__mobile-extra, .nav__burger { display: none; }
+.nav__cta { display: flex; align-items: center; gap: 1.5rem; }
+.langswitch { display: inline-flex; align-items: center; gap: 0.5rem; font-size: 0.875rem; font-weight: 500; letter-spacing: 0.08em; white-space: nowrap; }
+.langswitch__item { color: var(--c-dark); transition: color 0.3s; }
+a.langswitch__item:hover, .langswitch__item.is-active { color: var(--c-accent); }
+.langswitch__sep { color: var(--c-dash); }
 
 @media (max-width: 991px) {
   .nav { padding-top: 0; }

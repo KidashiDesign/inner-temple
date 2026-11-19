@@ -1,7 +1,7 @@
 import { useRef, useState } from 'react'
 import { gsap, useGSAP } from '../lib/gsap.js'
 import { Plus } from './Icons.jsx'
-import faq from '../data/faq.json'
+import { useI18n } from '../i18n/I18nProvider.jsx'
 
 function FaqItem({ item, number }) {
   const [open, setOpen] = useState(false)
@@ -30,12 +30,13 @@ function FaqItem({ item, number }) {
 
 /** FAQ section: heading left, independently toggling items right. */
 export default function Faq({ tinted = false }) {
+  const { ui, faq } = useI18n()
   return (
     <section className={`section${tinted ? ' bg-alt' : ''}`}>
       <div className="container faq">
         <div className="stack faq__head">
-          <h2 data-blur>Häufige <span className="accent">Fragen</span></h2>
-          <p data-blur>Hier finden Sie Antworten auf die Fragen, die uns vor dem ersten Kurs am häufigsten gestellt werden.</p>
+          <h2 data-blur>{ui.faq.title} <span className="accent">{ui.faq.accent}</span></h2>
+          <p data-blur>{ui.faq.text}</p>
         </div>
         <div className="faq__list">
           {faq.map((item, i) => <FaqItem key={item.question} item={item} number={i + 1} />)}
