@@ -47,7 +47,6 @@
 .footer__link { transition: color 0.3s; }
 .footer__link:hover { color: var(--c-accent); }
 .footer__pin { font-size: 2rem; }
-.footer__ai { opacity: 0.8; }
 .footer__bar { display: flex; justify-content: space-between; gap: 1rem; padding-block: 1rem; border-top: 1px dotted var(--c-accent); font-size: 0.875rem; }
 
 @media (max-width: 991px) {
