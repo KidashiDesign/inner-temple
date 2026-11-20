@@ -29,6 +29,8 @@
     "portrait": "Porträt"
   },
   "common": {
+    "kidashiTabHide": "Kidashi-Design-Button ausblenden",
+    "kidashiTabShow": "Kidashi-Design-Button einblenden",
     "requestSpot": "Platz anfragen",
     "ourTeam": "Unser Team",
     "teamTitle": "Menschen, die Sie",
