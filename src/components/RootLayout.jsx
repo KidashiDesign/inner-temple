@@ -5,6 +5,7 @@ import { gsap, ScrollTrigger, reducedMotion } from '../lib/gsap.js'
 import { scroll } from '../lib/scroll.js'
 import Navbar from './Navbar.jsx'
 import Footer from './Footer.jsx'
+import BackToKidashiDesignTab from './BackToKidashiDesignTab.jsx'
 
 /** Jumps to the top before the next page mounts, so its triggers start from scroll 0. */
 function ScrollReset() {
@@ -50,6 +51,7 @@ export default function RootLayout() {
       <ScrollReset />
       <Outlet key={pathname} />
       <Footer />
+      <BackToKidashiDesignTab />
     </>
   )
 }
