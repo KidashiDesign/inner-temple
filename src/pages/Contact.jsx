@@ -30,7 +30,7 @@ export default function Contact() {
               <p data-banner>{ui.contact.text}</p>
             </div>
           </div>
-          <div className="chero__image"><Media {...IMG.oellampen} data-hero-img /></div>
+          <div className="chero__image"><Media {...IMG.palasttuer} data-hero-img /></div>
           <ContactForm />
         </div>
       </section>
