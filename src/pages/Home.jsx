@@ -184,7 +184,6 @@ export default function Home() {
           <section className="section section--top vband">
             <div className="vband__box">
               <Media {...IMG.berge} className="vband__media" />
-              <div className="vband__btn"><span className="eyebrow">{t.vband}</span></div>
             </div>
           </section>
 
