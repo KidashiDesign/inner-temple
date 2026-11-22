@@ -215,6 +215,8 @@
   .idetail__photo { max-width: none; width: 100%; }
 }
 @media (max-width: 767px) {
+  .hero__shade { background: linear-gradient(180deg, rgba(18, 24, 39, 0.8), rgba(18, 24, 39, 0.7)); }
+  .phero__shade { background: rgba(18, 24, 39, 0.75); }
   .hero__content { flex-direction: column; align-items: flex-start; padding-top: 14rem; }
   .hero__card { max-width: none; }
   .partners { flex-direction: column; }
